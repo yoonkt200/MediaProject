@@ -13,17 +13,20 @@ from table.models import Test
 
 def Table(request):
     list = Test.objects.all()
+    hello = tf.constant('Hello, TensorFlow!')
+    sess = tf.Session()
+    tensor = str(sess.run(hello))
     print (list)
-    return render(request, 'pages/table/table.html', {'list': list})
+    return render(request, 'pages/table/table.html', {'list': list, 'tensor': tensor})
 
 
-def FirebaseObserver():
+# def FirebaseObserver():
     # while True:
     #     time.sleep(5)
     #     print ("hello world")
-    hello = tf.constant('Hello, TensorFlow!')
-    sess = tf.Session()
-    print(sess.run(hello))
+    # hello = tf.constant('Hello, TensorFlow!')
+    # sess = tf.Session()
+    # print(sess.run(hello))
 
 
-FirebaseObserver()
+# FirebaseObserver()
