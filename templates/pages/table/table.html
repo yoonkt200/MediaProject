@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Media Project</title>
 </head>
 <body>
-    hello world!
+    {% for element in list %}
+		<p>{{element.testfield}}</p>
+	{% endfor %}
 </body>
 </html>
