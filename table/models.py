@@ -11,3 +11,8 @@ class TimeStampedModel(models.Model):
 
 class Test(TimeStampedModel):
     testfield = models.CharField(max_length=200, default="")
+
+    @staticmethod
+    def createTest(testfield):
+        obj = Test.objects.create(testfield=testfield)
+        obj.save()
