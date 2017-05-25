@@ -19,11 +19,11 @@ from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
 
-from table.views import Table
+from fbconnector.views import Linker
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name="pages/index.html")),
-    url(r'^table$', Table),
+    url(r'^backgounrd$', Linker),
 ]
