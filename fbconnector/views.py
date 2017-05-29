@@ -2,6 +2,9 @@ from firebase import firebase
 import pyrebase
 from django.shortcuts import render, redirect
 
+from commerce.models import Category, Item
+
+# get remote FB Application
 firebased = firebase.FirebaseApplication('https://vaportalk-6725e.firebaseio.com', authentication=None)
 
 
@@ -38,7 +41,7 @@ def UpdateCommerceDB(response):
         return False
 
 
-# Attach FB DB Observer
+# FB DB Observer
 def FirebaseObserver():
     config = {
         "apiKey": "AIzaSyDigu179_TBrh8xU7C_ZgJypnpOKYxggFc",
@@ -57,4 +60,5 @@ def Linker(request):
     return render(request)
 
 
+# Attach to FB with django Observer
 FirebaseObserver()
