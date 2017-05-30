@@ -33,11 +33,27 @@ class Item(TimeStampedModel):
     def __str__(self):
         return self.itemName
 
-    # @staticmethod
-    # def registrationItem(itemName):
-    #     itemName = itemName.replace(" ", "")
-    #     item = Item.checkRegistered(itemName)
-    #     if Item.checkRegistered(itemName) == True:
-    #
-    #     else:
-    #
+    @staticmethod
+    def registrationItem(itemName, category):
+        itemName = itemName.replace(" ", "")
+        item = Item.checkRegistered(itemName, category)
+        if item:
+            return item
+        else:
+            item = Item.createItem(itemName, category)
+            return item
+
+    @staticmethod
+    def checkRegistered(itemName, category):
+        try:
+            item = Item.objects.get(itemName=itemName, category=category)
+        except:
+            item = False
+
+        return item
+
+    @staticmethod
+    def createItem(itemName, category):
+        item = Item.objects.create(itemName=itemName, category=category)
+        item.save()
+        return item

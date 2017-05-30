@@ -3,6 +3,7 @@ import pyrebase
 from django.shortcuts import render, redirect
 
 from commerce.models import Category, Item
+from solution.models import Commerce
 
 # get remote FB Application
 firebased = firebase.FirebaseApplication('https://vaportalk-6725e.firebaseio.com', authentication=None)
@@ -24,18 +25,21 @@ def UpdateUserDB(response):
 
 # Callback function for Observer
 def UpdateCommerceDB(response):
-    # hi = firebased.get('/commerceData', '-KkyZdmsWarwzarFeLJ1')
-    # print(hi['commerceAnalysis'])
-    # print(hi['content'])
-    # print(hi['distance'])
-    # print(hi['hostName'])
+    hi = firebased.get('/commerceData', '-KlHwEyTzJvPXDk-Hhjk')
+    print(hi['commerceAnalysis'])
+    print(hi['content'])
+    print(hi['distance'])
+    print(hi['hostName'])
+    print(hi['buyers'])
+    user = firebased.get('/users', hi['hostUID'])
+    print (user)
 
     if response['data'] == None:
         return False
     elif response['data'] == True:
         commerceKey = response['path'].replace("/", "")
         commerceObj = firebased.get('/commerceData', commerceKey)
-        ## Create object
+        Commerce.createCommerce(commerceObj, firebased.get('/users', commerceObj['hostUID']))
         ## firebased.delete("/completedCommerces/", commerceKey)
     else:
         return False

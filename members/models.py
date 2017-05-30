@@ -5,11 +5,6 @@ import datetime
 
 from commerce.models import CategoryDivision, Category, Item
 
-GENDER = (
-    ('M', '남자'),
-    ('W', '여자'),
-)
-
 
 class TimeStampedModel(models.Model):
     created = models.DateTimeField(auto_now_add=True)
@@ -28,11 +23,11 @@ class MemberDivision(TimeStampedModel):
 
 
 class MemberManager(BaseUserManager):
-    def create_user(self, userId, memberName, password=None):
+    def create_user(self, userId, memberName, memberKeyId, password=None):
         if not userId:
             raise ValueError('Users must have an ID')
 
-        user = self.model(userId=userId, memberName=memberName)
+        user = self.model(userId=userId, memberName=memberName, memberKeyId=memberKeyId)
 
         user.set_password(password)
         user.save(using=self._db)
@@ -88,16 +83,40 @@ class Seller(TimeStampedModel):
     birthday = models.DateField(default=datetime.date.today)
     email = models.EmailField(verbose_name='email address', max_length=200)
     fcm = models.CharField(blank=True, max_length=200)
-    gender = models.CharField(max_length=200, choices=GENDER, default="남자")
-    isLocationAgree = models.BooleanField(default=False)
-    isPushAgree = models.BooleanField(default=False)
+    gender = models.CharField(max_length=200, default="male")
     phoneNumber = models.CharField(blank=True, max_length=200)
 
-    address = models.CharField(blank=True, default="", max_length=200)
+    company = models.CharField(blank=True, default="", max_length=200)
     category = models.ForeignKey(Category, default=1)
 
     def __str__(self):
-        return self.member.memberName + "/" + self.phoneNumber
+        return self.member.memberName
+
+    @staticmethod
+    def registrationSeller(memberKeyId, company, memberObj, commerceAnalysis):
+        try:
+            seller = Seller.objects.get(member__memberKeyId=memberKeyId)
+        except:
+            seller = None
+
+        if seller is None:
+            newSeller = Seller.createSeller(memberKeyId, company, memberObj, commerceAnalysis['category'])
+            newSeller.save()
+            return newSeller
+        else:
+            return seller
+
+    @staticmethod
+    def createSeller(memberKeyId, company, memberObj, categoryCode):
+        seller = Member.objects.create_user(memberObj['email'], memberObj['name'], memberKeyId=memberKeyId)
+        seller.set_password(memberObj['tel'])
+        seller.save()
+
+        category = Category.objects.get(categoryCode=categoryCode)
+        newSeller = Seller.objects.create(member=seller, birthday=memberObj['birthday'], email=memberObj['email'],
+                                          fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
+                                          gender=memberObj['gender'], company=company, category=category)
+        newSeller.save()
 
 
 class Buyer(TimeStampedModel):
@@ -105,7 +124,7 @@ class Buyer(TimeStampedModel):
     birthday = models.DateField(default=datetime.date.today)
     email = models.EmailField(verbose_name='email address', max_length=200)
     fcm = models.CharField(blank=True, max_length=200)
-    gender = models.CharField(max_length=200, choices=GENDER, default="남자")
+    gender = models.CharField(max_length=200, default="male")
     isLocationAgree = models.BooleanField(default=False)
     isPushAgree = models.BooleanField(default=False)
     phoneNumber = models.CharField(blank=True, max_length=200)
