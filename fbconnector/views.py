@@ -25,24 +25,22 @@ def UpdateUserDB(response):
 
 # Callback function for Observer
 def UpdateCommerceDB(response):
-    hi = firebased.get('/commerceData', '-KlHwEyTzJvPXDk-Hhjk')
-    print(hi['commerceAnalysis'])
-    print(hi['content'])
-    print(hi['distance'])
-    print(hi['hostName'])
-    print(hi['buyers'])
-    user = firebased.get('/users', hi['hostUID'])
-    print (user)
+    if response['path'] == "/":
+        return False
 
     if response['data'] == None:
         return False
-    elif response['data'] == True:
+
+    if response['data']:
         commerceKey = response['path'].replace("/", "")
-        commerceObj = firebased.get('/commerceData', commerceKey)
-        Commerce.createCommerce(commerceObj, firebased.get('/users', commerceObj['hostUID']))
-        ## firebased.delete("/completedCommerces/", commerceKey)
-    else:
-        return False
+        if "commerceAnalysis" in commerceKey:
+            return False
+        else:
+            commerceObj = firebased.get('/commerceData', commerceKey)
+
+        commerce = Commerce.createCommerce(commerceObj, firebased.get('/users', commerceObj['hostUID']))
+        if commerce:
+            firebased.delete("/commerceData/", commerceKey)
 
 
 # FB DB Observer
@@ -56,7 +54,7 @@ def FirebaseObserver():
 
     pyrebased = pyrebase.initialize_app(config)
     db = pyrebased.database()
-    db.child("completedCommerces").stream(UpdateCommerceDB)
+    db.child("commerceData").stream(UpdateCommerceDB)
 
 
 # Django - background must need linker view

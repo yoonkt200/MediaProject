@@ -22,16 +22,14 @@ class Commerce(TimeStampedModel):
     timer = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.item
+        return self.item.itemName
 
     @staticmethod
     def createCommerce(obj, sellerObj):
-        obj['distance']
-        obj['content']
-        obj['timer']
-        obj['title']
         commerceAnalysis = obj['commerceAnalysis']
         seller = Seller.registrationSeller(obj['hostUID'], obj['hostName'], sellerObj, commerceAnalysis)
         item = Item.registrationItem(commerceAnalysis['item'], seller.category)
-
-        return False
+        commerce = Commerce.objects.create(item=item, seller=seller, content=obj['content'], title=obj['title'],
+                                distance=obj['distance'], timer=obj['timer'])
+        commerce.save()
+        return commerce

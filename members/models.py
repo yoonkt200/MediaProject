@@ -14,6 +14,15 @@ class TimeStampedModel(models.Model):
         abstract = True
 
 
+def getBirthdayDate(str):
+    if str[:1] == "1":
+        return '20' + str[:2] + '-' + str[2:4] + '-' + str[4:6]
+    elif str[:1] == "0":
+        return '20' + str[:2] + '-' + str[2:4] + '-' + str[4:6]
+    else:
+        return '19' + str[:2] + '-' + str[2:4] + '-' + str[4:6]
+
+
 class MemberDivision(TimeStampedModel):
     divisionName = models.CharField(max_length=200)
     info = models.CharField(max_length=200)
@@ -23,21 +32,22 @@ class MemberDivision(TimeStampedModel):
 
 
 class MemberManager(BaseUserManager):
+
     def create_user(self, userId, memberName, memberKeyId, password=None):
         if not userId:
             raise ValueError('Users must have an ID')
 
         user = self.model(userId=userId, memberName=memberName, memberKeyId=memberKeyId)
-
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, userId, memberName, password):
-        user = self.create_user(userId=userId, password=password, memberName=memberName)
-        user.is_admin = True
-        user.save(using=self._db)
-        return user
+
+def create_superuser(self, userId, memberName, password):
+    user = self.create_user(userId=userId, password=password, memberName=memberName)
+    user.is_admin = True
+    user.save(using=self._db)
+    return user
 
 
 class Member(TimeStampedModel, AbstractBaseUser):
@@ -46,8 +56,7 @@ class Member(TimeStampedModel, AbstractBaseUser):
     userId = models.CharField(max_length=200, default="", unique=True)
     objects = MemberManager()
     is_admin = models.BooleanField(default=False)
-    memberKeyId = models.CharField(max_length=200, default="", unique=True)
-
+    memberKeyId = models.CharField(max_length=200, default="")
     USERNAME_FIELD = 'userId'
     REQUIRED_FIELDS = ['memberName']
 
@@ -85,7 +94,6 @@ class Seller(TimeStampedModel):
     fcm = models.CharField(blank=True, max_length=200)
     gender = models.CharField(max_length=200, default="male")
     phoneNumber = models.CharField(blank=True, max_length=200)
-
     company = models.CharField(blank=True, default="", max_length=200)
     category = models.ForeignKey(Category, default=1)
 
@@ -106,17 +114,18 @@ class Seller(TimeStampedModel):
         else:
             return seller
 
+
     @staticmethod
     def createSeller(memberKeyId, company, memberObj, categoryCode):
         seller = Member.objects.create_user(memberObj['email'], memberObj['name'], memberKeyId=memberKeyId)
         seller.set_password(memberObj['tel'])
         seller.save()
-
         category = Category.objects.get(categoryCode=categoryCode)
-        newSeller = Seller.objects.create(member=seller, birthday=memberObj['birthday'], email=memberObj['email'],
-                                          fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
-                                          gender=memberObj['gender'], company=company, category=category)
+        newSeller = Seller.objects.create(member=seller, birthday=getBirthdayDate(memberObj['birthday']),
+                                      email=memberObj['email'], fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
+                                      gender=memberObj['gender'], company=company, category=category)
         newSeller.save()
+        return newSeller
 
 
 class Buyer(TimeStampedModel):
@@ -128,7 +137,6 @@ class Buyer(TimeStampedModel):
     isLocationAgree = models.BooleanField(default=False)
     isPushAgree = models.BooleanField(default=False)
     phoneNumber = models.CharField(blank=True, max_length=200)
-
     items = models.ManyToManyField('commerce.Item')
 
     class Meta:
