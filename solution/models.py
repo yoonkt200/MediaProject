@@ -33,3 +33,29 @@ class Commerce(TimeStampedModel):
                                 distance=obj['distance'], timer=obj['timer'])
         commerce.save()
         return commerce
+
+
+# w가 가장 높은애가 영향력이 높은것, pvalue는 믿을만한 정도를 나타냄
+class CommerceSellRegression(TimeStampedModel):
+    category = models.ForeignKey(Category, default=1)
+    bias = models.FloatField(null=True, blank=True, default=None)
+    cost = models.FloatField(null=True, blank=True, default=None)
+    adjr2 = models.FloatField(null=True, blank=True, default=None)
+    distance_w = models.FloatField(null=True, blank=True, default=None)
+    distance_pValue = models.FloatField(null=True, blank=True, default=None)
+    timer_w = models.FloatField(null=True, blank=True, default=None)
+    timer_pValue = models.FloatField(null=True, blank=True, default=None)
+    price_w = models.FloatField(null=True, blank=True, default=None)
+    price_pValue = models.FloatField(null=True, blank=True, default=None)
+
+    def __str__(self):
+        return self.category.categoryName
+
+
+class PopularText(TimeStampedModel):
+    category = models.ForeignKey(Category, default=1)
+    contentTextWithDelimiter = models.CharField(max_length=200, default="")
+    titleTextWithDelimiter = models.CharField(max_length=200, default="")
+
+    def __str__(self):
+        return self.category.categoryName
