@@ -40,8 +40,7 @@ class Item(TimeStampedModel):
         if item:
             return item
         else:
-            item = Item.createItem(itemName, category)
-            return item
+            return Item.createItem(itemName, category)
 
     @staticmethod
     def checkRegistered(itemName, category):

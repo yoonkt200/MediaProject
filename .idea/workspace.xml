@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e31e6-752d-4782-b966-d15018a0d4f6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fbconnector/views.py" afterPath="$PROJECT_DIR$/fbconnector/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commerce/models.py" afterPath="$PROJECT_DIR$/commerce/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/members/models.py" afterPath="$PROJECT_DIR$/members/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution/models.py" afterPath="$PROJECT_DIR$/solution/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +18,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commerce/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -31,8 +28,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solution/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="-341">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -43,8 +40,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/members/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="159" column="48" lean-forward="true" selection-start-line="159" selection-start-column="48" selection-end-line="159" selection-end-column="48" />
+            <state relative-caret-position="526">
+              <caret line="178" column="17" lean-forward="true" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
               </folding>
@@ -55,7 +52,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fbconnector/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="330">
               <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -129,7 +126,6 @@
         <option value="$PROJECT_DIR$/regression_prac.py" />
         <option value="$PROJECT_DIR$/apriori_prac.py" />
         <option value="$PROJECT_DIR$/Vapor/settings.py" />
-        <option value="$PROJECT_DIR$/commerce/models.py" />
         <option value="$PROJECT_DIR$/commerce/admin.py" />
         <option value="$PROJECT_DIR$/members/admin.py" />
         <option value="$PROJECT_DIR$/members/views.py" />
@@ -138,8 +134,9 @@
         <option value="$PROJECT_DIR$/textmining_prac.py" />
         <option value="$PROJECT_DIR$/association_prac.py" />
         <option value="$PROJECT_DIR$/solution/models.py" />
-        <option value="$PROJECT_DIR$/members/models.py" />
         <option value="$PROJECT_DIR$/fbconnector/views.py" />
+        <option value="$PROJECT_DIR$/commerce/models.py" />
+        <option value="$PROJECT_DIR$/members/models.py" />
       </list>
     </option>
   </component>
@@ -681,16 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/members/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solution/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -701,17 +688,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commerce/models.py">
+    <entry file="file://$PROJECT_DIR$/members/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fbconnector/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="330">
           <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -719,10 +708,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/commerce/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/solution/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="-341">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -731,8 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/members/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="159" column="48" lean-forward="true" selection-start-line="159" selection-start-column="48" selection-end-line="159" selection-end-column="48" />
+        <state relative-caret-position="526">
+          <caret line="178" column="17" lean-forward="true" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
           </folding>

@@ -86,6 +86,15 @@ class Member(TimeStampedModel, AbstractBaseUser):
     def is_staff(self):
         return self.is_admin
 
+    @staticmethod
+    def getMember(email, memberKeyId):
+        try:
+            member = Member.objects.get(Q(userId=email) | Q(memberKeyId=memberKeyId))
+        except:
+            member = None
+
+        return member
+
 
 class Seller(TimeStampedModel):
     member = models.OneToOneField(Member, on_delete=models.CASCADE, primary_key=True, )
@@ -116,10 +125,7 @@ class Seller(TimeStampedModel):
 
     @staticmethod
     def createSeller(memberKeyId, company, memberObj, categoryCode):
-        try:
-            member = Member.objects.get(Q(userId=memberObj['email']) | Q(memberKeyId=memberKeyId))
-        except:
-            member = None
+        member = Member.getMember(memberObj['email'], memberKeyId)
 
         if member:
             category = Category.objects.get(categoryCode=categoryCode)
@@ -135,8 +141,9 @@ class Seller(TimeStampedModel):
             seller.save()
             category = Category.objects.get(categoryCode=categoryCode)
             newSeller = Seller.objects.create(member=seller, birthday=getBirthdayDate(memberObj['birthday']),
-                                          email=memberObj['email'], fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
-                                          gender=memberObj['gender'], company=company, category=category)
+                                              email=memberObj['email'], fcm=memberObj['fcm'],
+                                              phoneNumber=memberObj['tel'],
+                                              gender=memberObj['gender'], company=company, category=category)
             newSeller.save()
             return newSeller
 
@@ -172,10 +179,7 @@ class Buyer(TimeStampedModel):
     @staticmethod
     def createBuyer(firebaseManager, keyId):
         memberObj = firebaseManager.get('/users', keyId)
-        try:
-            member = Member.objects.get(Q(userId=memberObj['email']) | Q(memberKeyId=keyId))
-        except:
-            member = None
+        member = Member.getMember(memberObj['email'], keyId)
 
         if member:
             newBuyer = Buyer.objects.create(member=member, birthday=getBirthdayDate(memberObj['birthday']),
@@ -189,7 +193,8 @@ class Buyer(TimeStampedModel):
             buyer.set_password(memberObj['tel'])
             buyer.save()
             newBuyer = Buyer.objects.create(member=buyer, birthday=getBirthdayDate(memberObj['birthday']),
-                                              email=memberObj['email'], fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
-                                              gender=memberObj['gender'])
+                                            email=memberObj['email'], fcm=memberObj['fcm'],
+                                            phoneNumber=memberObj['tel'],
+                                            gender=memberObj['gender'])
             newBuyer.save()
             return newBuyer
