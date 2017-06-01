@@ -1,5 +1,6 @@
 from django.contrib.auth.base_user import BaseUserManager, AbstractBaseUser
 from django.db import models
+from django.db.models import Q
 from django.contrib.auth import authenticate, login
 import datetime
 
@@ -42,12 +43,11 @@ class MemberManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-
-def create_superuser(self, userId, memberName, password):
-    user = self.create_user(userId=userId, password=password, memberName=memberName)
-    user.is_admin = True
-    user.save(using=self._db)
-    return user
+    def create_superuser(self, userId, memberName, password):
+        user = self.create_user(userId=userId, password=password, memberName=memberName)
+        user.is_admin = True
+        user.save(using=self._db)
+        return user
 
 
 class Member(TimeStampedModel, AbstractBaseUser):
@@ -109,7 +109,6 @@ class Seller(TimeStampedModel):
 
         if seller is None:
             newSeller = Seller.createSeller(memberKeyId, company, memberObj, commerceAnalysis['category'])
-            newSeller.save()
             return newSeller
         else:
             return seller
@@ -117,15 +116,29 @@ class Seller(TimeStampedModel):
 
     @staticmethod
     def createSeller(memberKeyId, company, memberObj, categoryCode):
-        seller = Member.objects.create_user(memberObj['email'], memberObj['name'], memberKeyId=memberKeyId)
-        seller.set_password(memberObj['tel'])
-        seller.save()
-        category = Category.objects.get(categoryCode=categoryCode)
-        newSeller = Seller.objects.create(member=seller, birthday=getBirthdayDate(memberObj['birthday']),
-                                      email=memberObj['email'], fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
-                                      gender=memberObj['gender'], company=company, category=category)
-        newSeller.save()
-        return newSeller
+        try:
+            member = Member.objects.get(Q(userId=memberObj['email']) | Q(memberKeyId=memberKeyId))
+        except:
+            member = None
+
+        if member:
+            category = Category.objects.get(categoryCode=categoryCode)
+            newSeller = Seller.objects.create(member=member, birthday=getBirthdayDate(memberObj['birthday']),
+                                              email=memberObj['email'], fcm=memberObj['fcm'],
+                                              phoneNumber=memberObj['tel'],
+                                              gender=memberObj['gender'], company=company, category=category)
+            newSeller.save()
+            return newSeller
+        else:
+            seller = Member.objects.create_user(memberObj['email'], memberObj['name'], memberKeyId=memberKeyId)
+            seller.set_password(memberObj['tel'])
+            seller.save()
+            category = Category.objects.get(categoryCode=categoryCode)
+            newSeller = Seller.objects.create(member=seller, birthday=getBirthdayDate(memberObj['birthday']),
+                                          email=memberObj['email'], fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
+                                          gender=memberObj['gender'], company=company, category=category)
+            newSeller.save()
+            return newSeller
 
 
 class Buyer(TimeStampedModel):
@@ -134,8 +147,6 @@ class Buyer(TimeStampedModel):
     email = models.EmailField(verbose_name='email address', max_length=200)
     fcm = models.CharField(blank=True, max_length=200)
     gender = models.CharField(max_length=200, default="male")
-    isLocationAgree = models.BooleanField(default=False)
-    isPushAgree = models.BooleanField(default=False)
     phoneNumber = models.CharField(blank=True, max_length=200)
     items = models.ManyToManyField('commerce.Item')
 
@@ -144,3 +155,41 @@ class Buyer(TimeStampedModel):
 
     def __str__(self):
         return self.member.memberName
+
+    @staticmethod
+    def getBuyerByKeyId(firebaseManager, keyId):
+        try:
+            buyer = Buyer.objects.get(member__memberKeyId=keyId)
+        except:
+            buyer = None
+
+        if buyer is None:
+            newBuyer = Buyer.createBuyer(firebaseManager, keyId)
+            return newBuyer
+        else:
+            return buyer
+
+    @staticmethod
+    def createBuyer(firebaseManager, keyId):
+        memberObj = firebaseManager.get('/users', keyId)
+        try:
+            member = Member.objects.get(Q(userId=memberObj['email']) | Q(memberKeyId=keyId))
+        except:
+            member = None
+
+        if member:
+            newBuyer = Buyer.objects.create(member=member, birthday=getBirthdayDate(memberObj['birthday']),
+                                            email=memberObj['email'], fcm=memberObj['fcm'],
+                                            phoneNumber=memberObj['tel'],
+                                            gender=memberObj['gender'])
+            newBuyer.save()
+            return newBuyer
+        else:
+            buyer = Member.objects.create_user(memberObj['email'], memberObj['name'], memberKeyId=keyId)
+            buyer.set_password(memberObj['tel'])
+            buyer.save()
+            newBuyer = Buyer.objects.create(member=buyer, birthday=getBirthdayDate(memberObj['birthday']),
+                                              email=memberObj['email'], fcm=memberObj['fcm'], phoneNumber=memberObj['tel'],
+                                              gender=memberObj['gender'])
+            newBuyer.save()
+            return newBuyer

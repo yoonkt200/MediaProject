@@ -37,10 +37,13 @@ def UpdateCommerceDB(response):
             return False
         else:
             commerceObj = firebased.get('/commerceData', commerceKey)
+            sendCount = firebased.get('/completedCommerces', commerceKey)
 
-        commerce = Commerce.createCommerce(commerceObj, firebased.get('/users', commerceObj['hostUID']))
+        commerce = Commerce.createCommerce(firebased, commerceObj, firebased.get('/users', commerceObj['hostUID']), sendCount)
+
         if commerce:
             firebased.delete("/commerceData/", commerceKey)
+            firebased.delete("/completedCommerces/", commerceKey)
 
 
 # FB DB Observer
@@ -54,7 +57,7 @@ def FirebaseObserver():
 
     pyrebased = pyrebase.initialize_app(config)
     db = pyrebased.database()
-    db.child("commerceData").stream(UpdateCommerceDB)
+    db.child("completedCommerces").stream(UpdateCommerceDB)
 
 
 # Django - background must need linker view

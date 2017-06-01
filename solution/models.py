@@ -4,6 +4,15 @@ from members.models import Member, Seller, Buyer
 from commerce.models import Category, Item
 
 
+def getBuyerUidList(buyers):
+    uid_list = []
+    for key, value in buyers.items():
+        uid = value['buyer']
+        uid_list.append(uid)
+
+    return uid_list
+
+
 class TimeStampedModel(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
@@ -20,17 +29,35 @@ class Commerce(TimeStampedModel):
     title = models.CharField(max_length=200, default="")
     distance = models.IntegerField(default=0)
     timer = models.IntegerField(default=0)
+    sendCount = models.IntegerField(default=0)
+    buyCount = models.IntegerField(default=0)
+    price = models.IntegerField(default=0)
 
     def __str__(self):
         return self.item.itemName
 
+    # commerce의 buyer list add, Buyer의 item list add
+    def manageBuyers(self, firebaseManager, buyer_uidList, item):
+        if not buyer_uidList:
+            return False
+        else:
+            for uid in buyer_uidList:
+                buyer = Buyer.getBuyerByKeyId(firebaseManager, uid)
+                buyer.items.add(item)
+                buyer.save()
+                self.buyers.add(buyer)
+
     @staticmethod
-    def createCommerce(obj, sellerObj):
+    def createCommerce(firebaseManager, obj, sellerObj, sendCount):
         commerceAnalysis = obj['commerceAnalysis']
+        uid_list = getBuyerUidList(obj['buyers'])
+
         seller = Seller.registrationSeller(obj['hostUID'], obj['hostName'], sellerObj, commerceAnalysis)
         item = Item.registrationItem(commerceAnalysis['item'], seller.category)
         commerce = Commerce.objects.create(item=item, seller=seller, content=obj['content'], title=obj['title'],
-                                distance=obj['distance'], timer=obj['timer'])
+                                distance=obj['distance'], timer=obj['timer'], sendCount=sendCount,
+                                           buyCount= len(uid_list), price=obj['price'])
+        commerce.manageBuyers(firebaseManager, uid_list, item)
         commerce.save()
         return commerce
 
