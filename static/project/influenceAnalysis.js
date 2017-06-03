@@ -17,6 +17,7 @@ $(document).ready(function () {
                     if (data.result == 'fail') alert('error!');
                     else {
                         $('.result').text(data.result);
+                        $('.result2').text(data.result2);
                     }
                 }
             })

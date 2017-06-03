@@ -370,7 +370,22 @@
   height:24px;
   left:250px;
   top:174px;
-  width:75px;
+  width:289px;
+}
+.text-59 {
+  border-bottom-color:#B6B6B6;
+  border-bottom-width:1px;
+  border-left-color:rgba(255,255,255,0.50);
+  border-left-width:0px;
+  border-right-color:rgba(255,255,255,0.50);
+  border-right-width:0px;
+  border-top-color:rgba(255,255,255,0.50);
+  border-top-width:0px;
+  height:24px;
+  left:550px;
+  text-align:center;
+  top:174px;
+  width:70px;
 }
 .footer {
   background-color:#29B6F6;

@@ -36,54 +36,61 @@ def Prediction(request):
     if request.POST:
         if request.user.is_authenticated():
             seller = Seller.getSeller(request.user)
-        price = request.POST['priceInput']
-        timer = request.POST['timerSelect']
-        distance = request.POST['distanceSelect']
-        print (price)
-        print (timer)
-        print (distance)
+        price = int(request.POST['priceInput'])
+        timer = int(request.POST['timerSelect'])*3600
+        distance = int(request.POST['distanceSelect'])*1000
+
         # commerceModel = CommerceSellRegression.getLatestModel(seller.category)
         # prediction = commerceModel.predict()
         # # 예상되는 판매 전환율은 xx%입니다.
         # # 작은글씨로 -> adjusted R squared : xx (예측 모델의 적합도 수치)
         # return JsonResponse({'success': 'success', 'prediction': prediction, 'adjr2': commerceModel.adjr2})
-        return JsonResponse({'result': 'success'})
+        return JsonResponse({'result': 'success', 'result2': 'success2'})
 
 
 # 제휴아이템 추천 랜딩페이지
 @csrf_exempt
 @login_required(login_url='/')
 def RecommendItemPage(request):
-    return render(request, 'pages/product_recommend_page.html')
+    if request.user.is_authenticated():
+        seller = Seller.getSeller(request.user)
+    items = Item.getItemsInCategory(seller.category)
+    return render(request, 'pages/product_recommend_page.html', {'seller': seller, 'items': items})
 
 
-# # Ajax 로, 추천받을 아이템과 몇개까지 받을건지 입력받음
-# @csrf_exempt
-# def RecommendItem(request):
-#     if request.POST:
-#         item = Item.getItem(post[itemId])
-#         commerces = Commerce.getSellersCommercesWithItem(seller, item)
-#         buyerlist = Commerce.getBuyerIdListByCommerces(commerces)
-#         transactionList = Buyer.getTransactionListInBuyers(buyerlist)
-#
-#         # 예시 : transactionList = [['불고기버거', '불새버거'], ['비누', '불고기버거', '화분'], ['불고기버거']]
-#         # apriori rule 분석
-#         # post[상위 몇개까지] 데이터 활용하여 상위 몇개까지의 연관분석 룰 결과로 내보냄
-#         # 지지도까지 같이 출력
-#
-#         return JsonResponse({'success': 'success', 'rules': result})
+# Ajax 로, 추천받을 아이템과 몇개까지 받을건지 입력받음
+@csrf_exempt
+def RecommendItem(request):
+    if request.POST:
+        if request.user.is_authenticated():
+            seller = Seller.getSeller(request.user)
+        item = Item.getItem(request.POST['itemSelect'])
+        print (item)
+        # commerces = Commerce.getSellersCommercesWithItem(seller, item)
+        # buyerlist = Commerce.getBuyerIdListByCommerces(commerces)
+        # transactionList = Buyer.getTransactionListInBuyers(buyerlist)
+
+        # 예시 : transactionList = [['불고기버거', '불새버거'], ['비누', '불고기버거', '화분'], ['불고기버거']]
+        # apriori rule 분석
+        # post[상위 몇개까지] 데이터 활용하여 상위 몇개까지의 연관분석 룰 결과로 내보냄
+        # 지지도까지 같이 출력
+
+        return JsonResponse({'rule1': 'success1', 'rule2': 'success2', 'rule1_support': 'success3',
+                             'rule2_support': 'success4'})
 
 
 # 텍스트마이닝 키워드 추출
 @csrf_exempt
 @login_required(login_url='/')
 def KeywordAnalysis(request):
+    if request.user.is_authenticated():
+        seller = Seller.getSeller(request.user)
     # popularTextModel = PopularText.getLatestModel(user.category)
     # titleKeyword = popularTextModel.getTitleTextList()
     # contentKeyword = popularTextModel.getContentTextList()
     # return render(request, 'pages/notice/notice_main_ver2.html',
     #               {'titleKeyword': titleKeyword, 'contentKeyword': contentKeyword})
-    return render(request, 'pages/keyword_analysis_page.html')
+    return render(request, 'pages/keyword_analysis_page.html', {'seller': seller})
 
 
 # 통계테이블 제공

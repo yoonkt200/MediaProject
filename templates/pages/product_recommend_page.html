@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/static/resource/css/compositions/footer.css">
     <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
     <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/static/resource/project/recommendItem.js"></script>
     <!--[if lt IE 9]>
       <script>
         document.createElement("header" );
@@ -33,46 +34,50 @@
         <section class="iu-section section">
           <div class="iu-center-box center-box-12">
             <div class="iu-text text-37">
-              <p>판매 내역 조회</p>
+              <p>제휴 아이템 추천</p>
             </div>
             <div class="iu-box box">
               <div class="iu-cell cell-32">
-                <p>롯데리아 님의 커머스 판매 카테고리는 "패스트푸드" 입니다.</p>
+                <p>{{seller.member.memberName}} 님의 커머스 판매 카테고리는 "{{seller.category.categoryName}}" 입니다.</p>
               </div>
               <div class="iu-cell cell-33">
-                <p>롯데리아에서 판매 영향 분석 결과는 다음과 같습니다.</p>
+                <p>"{{seller.category.categoryName}}" 카테고리의 전체 거래를 기반으로 , 사용자가 구매한 다른 아이템을 기반으로  제휴 아이템을 추천합니다.</p>
               </div>
             </div>
             <div class="iu-text text-24">
               <p>아이템 선택</p>
             </div>
-            <form class="iu-pg-form pg-form" enctype="multipart/form-data" method="post">
+            <form class="iu-pg-form form_recommendation pg-form" enctype="multipart/form-data" method="post">
               {% csrf_token %}
-              <select class="iu-pg-select pg-select">
-                <option value="">아이템</option>
+              <select class="iu-pg-select itemSelect pg-select" name="itemSelect">
+                {% for represented_iu_option in items %}
+                <option value="{{represented_iu_option.id}}">
+                  {{represented_iu_option.itemName}}
+                </option>
+                {% endfor %}
               </select>
-              <input class="iux-has-hover iu-pg-button pg-button" type="button" value="Try">
+              <input class="iux-has-hover iu-pg-button pg-button" type="submit" value="Try">
             </form>
             <div class="iu-text text-27">
               <p>제휴 아이템 추천 결과</p>
             </div>
             <div class="iu-box box-29">
-              <div class="iu-text text-33"></div>
+              <div class="iu-text rule1 text-33"></div>
               <div class="iu-text text-35">
                 <p>연관도 :&nbsp;</p>
               </div>
-              <div class="iu-text text-38"></div>
+              <div class="iu-text rule1_support text-38"></div>
               <div class="iu-text text-39">
                 <p>%</p>
               </div>
             </div>
             <div class="iu-floating-image floating-image-30"></div>
             <div class="iu-box box-30">
-              <div class="iu-text text-34"></div>
+              <div class="iu-text rule2 text-34"></div>
               <div class="iu-text text-36">
                 <p>연관도 :&nbsp;</p>
               </div>
-              <div class="iu-text text-40"></div>
+              <div class="iu-text rule2_support text-40"></div>
               <div class="iu-text text-41">
                 <p>%</p>
               </div>

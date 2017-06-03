@@ -56,3 +56,11 @@ class Item(TimeStampedModel):
         item = Item.objects.create(itemName=itemName, category=category)
         item.save()
         return item
+
+    @staticmethod
+    def getItemsInCategory(category):
+        return Item.objects.filter(category=category)
+
+    @staticmethod
+    def getItem(id):
+        return Item.objects.get(id=id)
