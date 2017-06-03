@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/resource/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/static/resource/css/pages/sales_effect_analysis_page.css">
+    <link rel="stylesheet" type="text/css" href="/static/resource/css/compositions/header.css">
+    <link rel="stylesheet" type="text/css" href="/static/resource/css/compositions/footer.css">
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page sales_effect_analysis_page">
+      <header class="iu-header header">
+        {% include './compositions/header.html' %}
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-12">
+            <div class="iu-text text-37">
+              <p>판매 영향 분석</p>
+            </div>
+            <div class="iu-box box">
+              <div class="iu-cell cell-32">
+                <p>롯데리아 님의 커머스 판매 카테고리는 "패스트푸드" 입니다.</p>
+              </div>
+              <div class="iu-cell cell-33">
+                <p>롯데리아에서 판매 영향 분석 결과는 다음과 같습니다.</p>
+              </div>
+              <div class="iu-box box-34">
+                <div class="iu-floating-image floating-image-56"></div>
+                <div class="iu-text text-39">
+                  <p>가격</p>
+                </div>
+                <div class="iu-text text-41">
+                  <p>회귀계수 :&nbsp;</p>
+                </div>
+                <div class="iu-text text-42">
+                  <p>p-value :&nbsp;</p>
+                </div>
+                <div class="iu-text text-51"></div>
+                <div class="iu-text text-52"></div>
+              </div>
+              <div class="iu-box box-35">
+                <div class="iu-floating-image floating-image-57"></div>
+                <div class="iu-text text-40">
+                  <p>시간</p>
+                </div>
+                <div class="iu-text text-44">
+                  <p>회귀계수 :&nbsp;</p>
+                </div>
+                <div class="iu-text text-45">
+                  <p>p-value :&nbsp;</p>
+                </div>
+                <div class="iu-text text-55"></div>
+                <div class="iu-text text-56"></div>
+              </div>
+              <div class="iu-box box-36">
+                <div class="iu-floating-image floating-image-58"></div>
+                <div class="iu-text text-46">
+                  <p>거리</p>
+                </div>
+                <div class="iu-text text-47">
+                  <p>회귀계수 :&nbsp;</p>
+                </div>
+                <div class="iu-text text-48">
+                  <p>p-value :&nbsp;</p>
+                </div>
+                <div class="iu-text text-57"></div>
+                <div class="iu-text text-58"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="iu-section section-34">
+          <div class="iu-center-box center-box-35">
+            <div class="iu-text text-38">
+              <p>모의 베이퍼 커머스&nbsp;</p>
+            </div>
+            <div class="iu-box box-38">
+              <div class="iu-text text-43">
+                <p>판매 예측</p>
+              </div>
+              <form class="iu-pg-form pg-form-44" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                <select class="iu-pg-select pg-select-47">
+                  <option value="">가격</option>
+                </select>
+                <select class="iu-pg-select pg-select-48">
+                  <option value="">시간</option>
+                </select>
+                <select class="iu-pg-select pg-select-49">
+                  <option value="">거리</option>
+                </select>
+                <input class="iux-has-hover iu-pg-button pg-button-50" type="button" value="Try">
+              </form>
+              <div class="iu-text text-49">
+                <p>결과</p>
+              </div>
+              <div class="iu-text text-50">
+                <p>예측 된 구매 전환률은</p>
+              </div>
+              <div class="iu-text text-53"></div>
+              <div class="iu-text text-54">
+                <p>% 입니다.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        {% include './compositions/footer.html' %}
+      </footer>
+    </div>
+  </body>
+</HTML>

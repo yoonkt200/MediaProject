@@ -1,0 +1,181 @@
+.iu-center-box {
+  width:960px;
+}
+.header {
+  color:#333333;
+  height:76px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:100%;
+}
+.page-content {
+  background-color:#FFFFFF;
+}
+.section {
+  height:550px;
+}
+.text-13 {
+  bottom:0px;
+  color:#B4B4B4;
+  font-family:'Helvetica', sans-serif;
+  font-size:20px;
+  height:59px;
+  left:43px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:right;
+  top:0px;
+  width:49.89%;
+}
+.floating-image-18 {
+  background-image:url('/static/resource/project/iphone_launchScreen.png');
+  background-position:center center;
+  background-size:contain;
+  height:498px;
+  left:546px;
+  top:50px;
+  width:309px;
+}
+.section-21 {
+  background-color:#E5E5E5;
+  background-size:cover;
+  color:#000000;
+  font-size:36px;
+  height:530px;
+}
+.text-24 {
+  color:#494949;
+  font-size:30px;
+  font-weight:700;
+  height:42px;
+  left:0px;
+  text-align:center;
+  top:79px;
+  width:100%;
+}
+.text-25 {
+  font-size:13px;
+  height:60px;
+  left:172px;
+  top:140px;
+  width:617px;
+}
+.box {
+  height:241px;
+  left:30px;
+  top:210px;
+  width:200px;
+}
+.text-27 {
+  color:#494949;
+  font-size:15px;
+  font-weight:700;
+  height:25px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:0px;
+  width:133px;
+}
+.text-28 {
+  color:#494949;
+  font-size:13px;
+  height:154px;
+  left:0px;
+  text-align:justify;
+  top:40px;
+  width:100%;
+}
+.box-29 {
+  height:241px;
+  left:265px;
+  top:210px;
+  width:200px;
+}
+.text-30 {
+  color:#494949;
+  font-size:15px;
+  font-weight:700;
+  height:21px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:0px;
+  width:73px;
+}
+.text-31 {
+  color:#494949;
+  font-size:13px;
+  height:154px;
+  left:0px;
+  text-align:justify;
+  top:40px;
+  width:100%;
+}
+.box-32 {
+  height:241px;
+  left:495px;
+  top:210px;
+  width:200px;
+}
+.text-33 {
+  color:#494949;
+  font-size:15px;
+  font-weight:700;
+  height:20px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:0px;
+  width:102px;
+}
+.text-34 {
+  color:#494949;
+  font-size:13px;
+  height:198px;
+  left:0px;
+  text-align:justify;
+  top:40px;
+  width:100%;
+}
+.box-35 {
+  height:241px;
+  left:730px;
+  top:210px;
+  width:200px;
+}
+.text-36 {
+  color:#494949;
+  font-size:15px;
+  font-weight:700;
+  height:21px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:0px;
+  width:59px;
+}
+.text-37 {
+  color:#494949;
+  font-size:13px;
+  font-weight:400;
+  height:141px;
+  left:0px;
+  text-align:justify;
+  top:40px;
+  width:100%;
+}
+.footer {
+  background-color:#29B6F6;
+  height:120px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:100%;
+}

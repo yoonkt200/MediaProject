@@ -11,7 +11,7 @@ firebased = firebase.FirebaseApplication('https://vaportalk-6725e.firebaseio.com
 
 # delete FB object
 def deleteFBObj(child, key):
-    firebased.delete("child", key)
+    firebased.delete(child, key)
 
 
 # Callback function for Observer
@@ -42,8 +42,8 @@ def UpdateCommerceDB(response):
         commerce = Commerce.createCommerce(firebased, commerceObj, firebased.get('/users', commerceObj['hostUID']), sendCount)
 
         if commerce:
-            firebased.delete("/commerceData/", commerceKey)
-            firebased.delete("/completedCommerces/", commerceKey)
+            deleteFBObj("/commerceData/", commerceKey)
+            deleteFBObj("/completedCommerces/", commerceKey)
 
 
 # FB DB Observer
@@ -66,4 +66,4 @@ def Linker(request):
 
 
 # Attach to FB with django Observer
-FirebaseObserver()
+# FirebaseObserver()
