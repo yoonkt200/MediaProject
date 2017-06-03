@@ -20,14 +20,18 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 from fbconnector.views import Linker
-from solution.views import InfluenceAnalysis, RecommendItemPage, KeywordAnalysis, DataTable
+from solution.views import MainPage, InfluenceAnalysis, RecommendItemPage, KeywordAnalysis, DataTable
+from members.views import Login
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', TemplateView.as_view(template_name="pages/index_login_page.html")),
-    url(r'^main$', TemplateView.as_view(template_name="pages/index_page.html")),
     url(r'^backgounrd$', Linker),
+
+    url(r'^$', TemplateView.as_view(template_name="pages/index_login_page.html")),
+    url(r'^login', Login),
+
+    url(r'^main$', MainPage),
     url(r'^analysis_influence$', InfluenceAnalysis),
     url(r'^recommend_item$', RecommendItemPage),
     url(r'^analysis_keyword$', KeywordAnalysis),

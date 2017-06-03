@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/static/resource/common/iu.css">
     <link rel="stylesheet" type="text/css" href="/static/resource/css/pages/index_login_page.css">
-    <link rel="stylesheet" type="text/css" href="/static/resource/css/compositions/header.css">
     <link rel="stylesheet" type="text/css" href="/static/resource/css/compositions/footer.css">
     <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
     <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/static/resource/project/login.js"></script>
     <!--[if lt IE 9]>
       <script>
         document.createElement("header" );
@@ -26,9 +26,7 @@
   </head>
   <body>
     <div class="iu-page index_login_page">
-      <header class="iu-header header">
-        {% include './compositions/header.html' %}
-      </header>
+      <header class="iu-header header"></header>
       <section class="iu-page-content page-content">
         <section class="iu-section section">
           <div class="iu-center-box center-box-12">
@@ -38,7 +36,7 @@
                   <p>VaporTalk Commerce</p>
                 </div>
               </div>
-              <form class="iu-pg-form pg-form" enctype="multipart/form-data" method="post">
+              <form class="iu-pg-form form_login pg-form" enctype="multipart/form-data" method="post">
                 {% csrf_token %}
                 <div class="iu-text text-28">
                   <p>UserId :&nbsp;</p>
@@ -46,9 +44,9 @@
                 <div class="iu-text text-30">
                   <p>Password :&nbsp;</p>
                 </div>
-                <input class="iu-pg-text-field pg-text-field-32" type="text" placeholder="아이디를 입력해주세요.">
-                <input class="iu-pg-text-field pg-text-field-33" type="text" placeholder="비밀번호를 입력해주세요. ">
-                <input class="iux-has-hover iu-pg-button pg-button" type="button" value="LOGIN">
+                <input class="iu-pg-text-field userId pg-text-field-32" type="email" name="userId" placeholder="아이디를 입력해주세요.">
+                <input class="iu-pg-text-field password pg-text-field-33" type="password" name="password" placeholder="비밀번호를 입력해주세요. ">
+                <input class="iux-has-hover iu-pg-button pg-button" type="submit" value="LOGIN">
               </form>
             </div>
           </div>

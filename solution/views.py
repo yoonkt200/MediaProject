@@ -7,6 +7,12 @@ from solution.models import Commerce, CommerceSellRegression, PopularText
 from commerce.models import CategoryDivision, Category, Item
 
 
+# 분석 소개 메인페이지
+@csrf_exempt
+def MainPage(request):
+    return render(request, 'pages/index_page.html')
+
+
 # 회귀분석 모델을 이용한 설명변수 추출 솔루션
 @csrf_exempt
 def InfluenceAnalysis(request):
