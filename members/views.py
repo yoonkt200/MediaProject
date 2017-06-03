@@ -26,3 +26,10 @@ def Login(request):
             return JsonResponse({'result': 'fail'})
     except:
         return JsonResponse({'result': 'fail'})
+
+
+# 로그아웃 관련 함수
+@csrf_exempt
+def Logout(request):
+    logout(request)
+    return redirect('/')

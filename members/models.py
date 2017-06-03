@@ -147,6 +147,10 @@ class Seller(TimeStampedModel):
             newSeller.save()
             return newSeller
 
+    @staticmethod
+    def getSeller(member):
+        return Seller.objects.get(member=member)
+
 
 class Buyer(TimeStampedModel):
     member = models.OneToOneField(Member, on_delete=models.CASCADE, primary_key=True, )

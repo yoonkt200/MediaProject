@@ -13,7 +13,7 @@
   background-color:#FFFFFF;
 }
 .section {
-  height:580px;
+  height:650px;
 }
 .text-37 {
   font-size:25px;
@@ -115,6 +115,15 @@
   left:130px;
   top:220px;
   width:100px;
+}
+.cell-58 {
+  border-width:0px;
+  height:50px;
+  left:26px;
+  line-height:50px;
+  text-align:left;
+  top:468px;
+  width:905px;
 }
 .box-35 {
   background-color:rgba(41,182,246,0.10);
@@ -256,7 +265,7 @@
 }
 .section-34 {
   background-color:rgba(219,219,219,0.55);
-  height:300px;
+  height:350px;
 }
 .text-38 {
   font-size:30px;
@@ -277,41 +286,34 @@
   color:#000000;
   font-weight:700;
   height:24px;
-  left:25px;
-  top:0px;
+  left:26px;
+  top:6px;
   width:65px;
 }
 .pg-form-44 {
   height:51px;
   left:25px;
-  top:27px;
+  top:39px;
   width:787px;
 }
-.pg-select-47 {
-  bottom:0px;
+.pg-text-field {
   height:32px;
   left:0px;
-  margin-bottom:auto;
-  margin-top:auto;
-  top:0px;
+  padding-left:8px;
+  padding-right:8px;
+  top:10px;
+  width:184px;
+}
+.pg-select {
+  height:32px;
+  left:216px;
+  top:10px;
   width:200px;
 }
-.pg-select-48 {
-  bottom:0px;
+.pg-select-58 {
   height:32px;
-  left:211px;
-  margin-bottom:auto;
-  margin-top:auto;
-  top:0px;
-  width:200px;
-}
-.pg-select-49 {
-  bottom:0px;
-  height:32px;
-  left:426px;
-  margin-bottom:auto;
-  margin-top:auto;
-  top:0px;
+  left:431px;
+  top:10px;
   width:200px;
 }
 .pg-button-50 {
@@ -322,7 +324,7 @@
   color:#29B6F6;
   font-weight:700;
   height:32px;
-  left:645px;
+  left:646px;
   margin-bottom:auto;
   margin-top:auto;
   top:0px;
@@ -338,7 +340,7 @@
   font-weight:700;
   height:24px;
   left:25px;
-  top:100px;
+  top:134px;
   width:65px;
 }
 .text-50 {
@@ -346,7 +348,7 @@
   border-width:0px;
   height:24px;
   left:25px;
-  top:140px;
+  top:174px;
   width:147px;
 }
 .text-53 {
@@ -361,13 +363,13 @@
   height:24px;
   left:170px;
   text-align:center;
-  top:140px;
+  top:174px;
   width:70px;
 }
 .text-54 {
   height:24px;
   left:250px;
-  top:140px;
+  top:174px;
   width:75px;
 }
 .footer {
