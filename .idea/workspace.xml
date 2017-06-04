@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e31e6-752d-4782-b966-d15018a0d4f6" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/association_prac.py" afterPath="$PROJECT_DIR$/association_batch.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/regression_prac.py" afterPath="$PROJECT_DIR$/regression_batch.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/textmining_prac.py" afterPath="$PROJECT_DIR$/textmining_batch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/project/keywordAnalysis.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vapor/urls.py" afterPath="$PROJECT_DIR$/Vapor/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution/models.py" afterPath="$PROJECT_DIR$/solution/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution/views.py" afterPath="$PROJECT_DIR$/solution/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/pages/keyword_analysis_page.html" afterPath="$PROJECT_DIR$/templates/pages/keyword_analysis_page.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solution/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="385">
+              <caret line="109" column="24" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="24" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -58,11 +57,33 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solution/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="74" column="56" lean-forward="true" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+            <state relative-caret-position="478">
+              <caret line="98" column="59" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="59" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keywordAnalysis.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/project/keywordAnalysis.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/project/dataTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/batchs/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+              <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -82,22 +103,10 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vapor/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="630">
+              <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding>
                 <element signature="e#639#671#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="textmining_batch.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/textmining_batch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,11 +173,12 @@
         <option value="$PROJECT_DIR$/static/resource/project/dataTable.js" />
         <option value="$PROJECT_DIR$/static/project/dataTable.js" />
         <option value="$PROJECT_DIR$/members/models.py" />
-        <option value="$PROJECT_DIR$/solution/views.py" />
-        <option value="$PROJECT_DIR$/Vapor/urls.py" />
         <option value="$PROJECT_DIR$/textmining_batch.py" />
         <option value="$PROJECT_DIR$/batchs/views.py" />
         <option value="$PROJECT_DIR$/solution/models.py" />
+        <option value="$PROJECT_DIR$/solution/views.py" />
+        <option value="$PROJECT_DIR$/Vapor/urls.py" />
+        <option value="$PROJECT_DIR$/static/project/keywordAnalysis.js" />
       </list>
     </option>
   </component>
@@ -564,7 +574,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/pages/index.html" />
     <entry file="file://$PROJECT_DIR$/table/admin.py" />
     <entry file="file://$PROJECT_DIR$/Vapor/firebase_streaming.py" />
     <entry file="file://$PROJECT_DIR$/templates/pages/j.html" />
@@ -767,13 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/project/dataTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/pages/sales_history_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -807,16 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vapor/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="e#639#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/textmining_batch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -827,20 +819,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solution/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="74" column="56" lean-forward="true" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/batchs/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -849,10 +831,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/solution/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="385">
+          <caret line="109" column="24" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="24" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/project/dataTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vapor/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="98" column="59" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/project/keywordAnalysis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>

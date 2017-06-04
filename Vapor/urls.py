@@ -21,7 +21,7 @@ from django.conf import settings
 
 from fbconnector.views import Linker
 from solution.views import MainPage, InfluenceAnalysis, Prediction, RecommendItemPage, RecommendItem, KeywordAnalysis, \
-    DataTable, GetTableData
+    DataTable, GetTableData, GetKeyword
 from members.views import Login, Logout
 from batchs.views import TextMining_batch
 
@@ -40,6 +40,7 @@ urlpatterns = [
     url(r'^recommend_item$', RecommendItemPage),
     url(r'^recommend_item_rules$', RecommendItem),
     url(r'^analysis_keyword$', KeywordAnalysis),
+    url(r'^getKeyword$', GetKeyword),
     url(r'^sales_history$', DataTable),
     url(r'^getTableDataList$', GetTableData),
 

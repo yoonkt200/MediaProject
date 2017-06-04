@@ -85,12 +85,18 @@ def RecommendItem(request):
 def KeywordAnalysis(request):
     if request.user.is_authenticated():
         seller = Seller.getSeller(request.user)
-    # popularTextModel = PopularText.getLatestModel(user.category)
-    # titleKeyword = popularTextModel.getTitleTextList()
-    # contentKeyword = popularTextModel.getContentTextList()
-    # return render(request, 'pages/notice/notice_main_ver2.html',
-    #               {'titleKeyword': titleKeyword, 'contentKeyword': contentKeyword})
     return render(request, 'pages/keyword_analysis_page.html', {'seller': seller})
+
+
+@csrf_exempt
+@login_required(login_url='/')
+def GetKeyword(request):
+    if request.user.is_authenticated():
+        seller = Seller.getSeller(request.user)
+    popularTextModel = PopularText.getLatestModel(seller.category)
+    titleKeyword = popularTextModel.getTitleTextList()
+    contentKeyword = popularTextModel.getContentTextList()
+    return JsonResponse({'result': 'success', 'titleKeyword': titleKeyword, 'contentKeyword': contentKeyword})
 
 
 # 통계테이블 제공

@@ -107,6 +107,14 @@ class PopularText(TimeStampedModel):
     def __str__(self):
         return self.category.categoryName
 
+    def getTitleTextList(self):
+        title_list = self.titleTextWithDelimiter.split(",")
+        return title_list
+
+    def getContentTextList(self):
+        content_list = self.contentTextWithDelimiter.split(",")
+        return content_list
+
     @staticmethod
     def createTextModel(category, content_rank, title_rank):
         contentTextWithDelimiter = ""
@@ -122,3 +130,7 @@ class PopularText(TimeStampedModel):
         model = PopularText.objects.create(category=category, contentTextWithDelimiter=contentTextWithDelimiter,
                                            titleTextWithDelimiter=titleTextWithDelimiter)
         model.save()
+
+    @staticmethod
+    def getLatestModel(category):
+        return PopularText.objects.filter(category=category).order_by('-created').last()
