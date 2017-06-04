@@ -16,8 +16,8 @@ $(document).ready(function () {
                 success: function (data) {
                     if (data.result == 'fail') alert('error!');
                     else {
-                        $('.result').text(data.result);
-                        $('.result2').text(data.result2);
+                        $('.result').text(data.prediction);
+                        $('.result2').text(data.adjr2);
                     }
                 }
             })

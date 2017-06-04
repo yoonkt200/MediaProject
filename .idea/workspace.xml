@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e31e6-752d-4782-b966-d15018a0d4f6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/association_batch.py" afterPath="$PROJECT_DIR$/association_batch.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/members/models.py" afterPath="$PROJECT_DIR$/members/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution/models.py" afterPath="$PROJECT_DIR$/solution/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution/views.py" afterPath="$PROJECT_DIR$/solution/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/project/recommendItem.js" afterPath="$PROJECT_DIR$/static/project/recommendItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/resource/css/pages/product_recommend_page.css" afterPath="$PROJECT_DIR$/static/resource/css/pages/product_recommend_page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/resource/project/recommendItem.js" afterPath="$PROJECT_DIR$/static/resource/project/recommendItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/project/influenceAnalysis.js" afterPath="$PROJECT_DIR$/static/project/influenceAnalysis.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/resource/project/influenceAnalysis.js" afterPath="$PROJECT_DIR$/static/resource/project/influenceAnalysis.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/pages/sales_effect_analysis_page.html" afterPath="$PROJECT_DIR$/templates/pages/sales_effect_analysis_page.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solution/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="63" />
+            <state relative-caret-position="712">
+              <caret line="136" column="23" lean-forward="true" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -55,13 +54,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solution/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            <state relative-caret-position="664">
+              <caret line="48" column="107" lean-forward="false" selection-start-line="48" selection-start-column="107" selection-end-line="48" selection-end-column="107" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="influenceAnalysis.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/project/influenceAnalysis.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -134,7 +145,6 @@
         <option value="$PROJECT_DIR$/templates/pages/sales_effect_analysis_page.html" />
         <option value="$PROJECT_DIR$/static/project/login.js" />
         <option value="$PROJECT_DIR$/static/resource/project/influenceAnalysis.js" />
-        <option value="$PROJECT_DIR$/static/project/influenceAnalysis.js" />
         <option value="$PROJECT_DIR$/commerce/models.py" />
         <option value="$PROJECT_DIR$/templates/pages/sales_history_page.html" />
         <option value="$PROJECT_DIR$/static/resource/project/dataTable.js" />
@@ -143,11 +153,12 @@
         <option value="$PROJECT_DIR$/batchs/views.py" />
         <option value="$PROJECT_DIR$/Vapor/urls.py" />
         <option value="$PROJECT_DIR$/static/project/keywordAnalysis.js" />
-        <option value="$PROJECT_DIR$/solution/models.py" />
         <option value="$PROJECT_DIR$/members/models.py" />
         <option value="$PROJECT_DIR$/association_batch.py" />
         <option value="$PROJECT_DIR$/static/project/recommendItem.js" />
+        <option value="$PROJECT_DIR$/static/project/influenceAnalysis.js" />
         <option value="$PROJECT_DIR$/solution/views.py" />
+        <option value="$PROJECT_DIR$/solution/models.py" />
       </list>
     </option>
   </component>
@@ -724,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/project/influenceAnalysis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/resource/project/dataTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -791,16 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solution/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/textmining_batch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -837,12 +831,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/project/influenceAnalysis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/solution/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        <state relative-caret-position="664">
+          <caret line="48" column="107" lean-forward="false" selection-start-line="48" selection-start-column="107" selection-end-line="48" selection-end-column="107" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="136" column="23" lean-forward="true" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

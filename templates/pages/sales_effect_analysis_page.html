@@ -54,11 +54,15 @@
                 <div class="iu-text text-42">
                   <p>유의성 :&nbsp;</p>
                 </div>
-                <div class="iu-text weight1 text-51"></div>
-                <div class="iu-text p-value1 text-52"></div>
+                <div class="iu-text weight1 text-51">
+                  <p>{{model.price_w}}</p>
+                </div>
+                <div class="iu-text p-value1 text-52">
+                  <p>{{model.price_pValue}}</p>
+                </div>
               </div>
               <div class="iu-cell cell-58">
-                <p>변수들의 영향 계수는 (()), (()), (()) 으로, (())이 가장 구매에 큰 영향을 미치는 요소로 분석되었습니다,</p>
+                <p style="font-size:15px; color:#29B5F6">변수들의 영향 계수는 {{model.distance_w}}, {{model.timer_w}}, {{model.price_w}} 으로, {{mostValuable}}이 가장 구매에 큰 영향을 미치는 요소로 분석되었습니다,</p>
               </div>
               <div class="iu-box box-35">
                 <div class="iu-floating-image floating-image-57"></div>
@@ -71,8 +75,12 @@
                 <div class="iu-text text-45">
                   <p>유의성 :&nbsp;</p>
                 </div>
-                <div class="iu-text weight2 text-55"></div>
-                <div class="iu-text p-value2 text-56"></div>
+                <div class="iu-text weight2 text-55">
+                  <p>{{model.timer_w}}</p>
+                </div>
+                <div class="iu-text p-value2 text-56">
+                  <p>{{model.timer_pValue}}</p>
+                </div>
               </div>
               <div class="iu-box box-36">
                 <div class="iu-floating-image floating-image-58"></div>
@@ -85,8 +93,12 @@
                 <div class="iu-text text-48">
                   <p>유의성 :&nbsp;</p>
                 </div>
-                <div class="iu-text weight3 text-57"></div>
-                <div class="iu-text p-value3 text-58"></div>
+                <div class="iu-text weight3 text-57">
+                  <p>{{model.distance_w}}</p>
+                </div>
+                <div class="iu-text p-value3 text-58">
+                  <p>{{model.distance_pValue}}</p>
+                </div>
               </div>
             </div>
           </div>

@@ -106,13 +106,42 @@ class CommerceSellRegression(TimeStampedModel):
     adjr2 = models.FloatField(null=True, blank=True, default=None)
     distance_w = models.FloatField(null=True, blank=True, default=None)
     distance_pValue = models.FloatField(null=True, blank=True, default=None)
+    distance_average = models.FloatField(null=True, blank=True, default=None)
+    distance_Sdeviation = models.FloatField(null=True, blank=True, default=None)
     timer_w = models.FloatField(null=True, blank=True, default=None)
     timer_pValue = models.FloatField(null=True, blank=True, default=None)
+    timer_average = models.FloatField(null=True, blank=True, default=None)
+    timer_Sdeviation = models.FloatField(null=True, blank=True, default=None)
     price_w = models.FloatField(null=True, blank=True, default=None)
     price_pValue = models.FloatField(null=True, blank=True, default=None)
+    price_average = models.FloatField(null=True, blank=True, default=None)
+    price_Sdeviation = models.FloatField(null=True, blank=True, default=None)
 
     def __str__(self):
         return self.category.categoryName
+
+    def findMostInfluential(self):
+        w_list = list([abs(self.distance_w), abs(self.timer_w), abs(self.price_w)])
+        if max(enumerate(w_list), key=lambda x: x[1])[0] == 0:
+            return ("거리")
+        elif max(enumerate(w_list), key=lambda x: x[1])[0] == 1:
+            return ("시간")
+        else:
+            return ("가격")
+
+    def predict(self, price, timer, distance):
+        price = (price - self.price_average) / self.price_Sdeviation
+        timer = (timer - self.timer_average) / self.timer_Sdeviation
+        distance = (distance - self.distance_average) / self.distance_Sdeviation
+        predict = (price * self.price_w) + (timer * self.timer_w) + (distance * self.distance_w) - self.bias
+        print (predict)
+        if predict < 0:
+            predict = 0
+        return str(predict)
+
+    @staticmethod
+    def getLatestModel(category):
+        return CommerceSellRegression.objects.filter(category=category).order_by('-created').last()
 
 
 class PopularText(TimeStampedModel):

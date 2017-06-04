@@ -25,11 +25,11 @@ def MainPage(request):
 def InfluenceAnalysis(request):
     if request.user.is_authenticated():
         seller = Seller.getSeller(request.user)
-    # commerceModel = CommerceSellRegression.getLatestModel(user.category)
-    # mostInfluential = commerceModel.findMostInfluential()
+    commerceModel = CommerceSellRegression.getLatestModel(seller.category)
+    mostInfluential = commerceModel.findMostInfluential()
     # # 변수들의 회귀계수는 xx, xx, xx으로, 가장 영향력이 높은 요소는 xx입니다.
-    # return render(request, 'pages/notice/notice_main_ver2.html', {'model': commerceModel, 'mostValuable': mostInfluential})
-    return render(request, 'pages/sales_effect_analysis_page.html', {'seller': seller})
+    return render(request, 'pages/sales_effect_analysis_page.html',
+                  {'model': commerceModel, 'mostValuable': mostInfluential, 'seller': seller})
 
 
 # Ajax 로 예측 수치를 보내면 예측결과 리턴해줌
@@ -42,12 +42,11 @@ def Prediction(request):
         timer = int(request.POST['timerSelect'])*3600
         distance = int(request.POST['distanceSelect'])*1000
 
-        # commerceModel = CommerceSellRegression.getLatestModel(seller.category)
-        # prediction = commerceModel.predict()
+        commerceModel = CommerceSellRegression.getLatestModel(seller.category)
+        prediction = commerceModel.predict(price, timer, distance)
         # # 예상되는 판매 전환율은 xx%입니다.
         # # 작은글씨로 -> adjusted R squared : xx (예측 모델의 적합도 수치)
-        # return JsonResponse({'success': 'success', 'prediction': prediction, 'adjr2': commerceModel.adjr2})
-        return JsonResponse({'result': 'success', 'result2': 'success2'})
+        return JsonResponse({'success': 'success', 'prediction': prediction, 'adjr2': commerceModel.adjr2})
 
 
 # 제휴아이템 추천 랜딩페이지
