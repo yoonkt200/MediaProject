@@ -167,6 +167,10 @@ class Buyer(TimeStampedModel):
     def __str__(self):
         return self.member.memberName
 
+    def getAge(self):
+        age = datetime.date.today().year - self.birthday.year + 1
+        return age
+
     @staticmethod
     def getBuyerByKeyId(firebaseManager, keyId):
         try:
@@ -202,3 +206,31 @@ class Buyer(TimeStampedModel):
                                             gender=memberObj['gender'])
             newBuyer.save()
             return newBuyer
+
+    @staticmethod
+    def getAverageAge(buyers):
+        sum = 0
+        for index, buyer in enumerate(buyers):
+            sum = sum + buyer.getAge()
+        return (str(sum / len(buyers)))
+        # try:
+        #     sum = 0
+        #     for index, buyer in enumerate(buyers):
+        #         sum = sum + buyer.getAge()
+        #     return (str(sum / len(buyers)))
+        # except:
+        #     return ("No Buyers")
+
+    @staticmethod
+    def getGenderRatio(buyers):
+        try:
+            male = 0
+            female = 0
+            for index, buyer in enumerate(buyers):
+                if buyer.gender == "male":
+                    male = male + 1
+                else:
+                    female = female + 1
+            return (str(male / (male + female) * 100) + "%")
+        except:
+            return ("No Buyers")

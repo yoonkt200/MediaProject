@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e31e6-752d-4782-b966-d15018a0d4f6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vapor/urls.py" afterPath="$PROJECT_DIR$/Vapor/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/members/models.py" afterPath="$PROJECT_DIR$/members/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution/models.py" afterPath="$PROJECT_DIR$/solution/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution/views.py" afterPath="$PROJECT_DIR$/solution/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/project/dataTable.js" afterPath="$PROJECT_DIR$/static/project/dataTable.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/resource/project/dataTable.js" afterPath="$PROJECT_DIR$/static/resource/project/dataTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/pages/sales_history_page.html" afterPath="$PROJECT_DIR$/templates/pages/sales_history_page.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solution/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+            <state relative-caret-position="656">
+              <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -31,11 +30,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dataTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/project/dataTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/resource/project/dataTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/members/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="114" column="39" lean-forward="false" selection-start-line="114" selection-start-column="39" selection-end-line="114" selection-end-column="39" />
+            <state relative-caret-position="-61">
+              <caret line="171" column="18" lean-forward="false" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
               </folding>
@@ -43,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solution/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="78" column="58" lean-forward="true" selection-start-line="78" selection-start-column="58" selection-end-line="78" selection-end-column="58" />
+            <state relative-caret-position="811">
+              <caret line="112" column="47" lean-forward="false" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -61,8 +80,8 @@
             <state relative-caret-position="210">
               <caret line="14" column="88" lean-forward="false" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
               <folding>
-                <marker date="1496569843000" expanded="true" signature="1143:1374" ph="..." />
-                <marker date="1496569843000" expanded="true" signature="1391:1647" ph="..." />
+                <marker date="1496575771000" expanded="true" signature="1143:1374" ph="..." />
+                <marker date="1496575771000" expanded="true" signature="1391:1647" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,7 +132,6 @@
         <option value="$PROJECT_DIR$/solution/admin.py" />
         <option value="$PROJECT_DIR$/textmining_prac.py" />
         <option value="$PROJECT_DIR$/association_prac.py" />
-        <option value="$PROJECT_DIR$/solution/models.py" />
         <option value="$PROJECT_DIR$/Vapor/settings.py" />
         <option value="$PROJECT_DIR$/fbconnector/views.py" />
         <option value="$PROJECT_DIR$/static/resource/project/login.js" />
@@ -121,7 +139,6 @@
         <option value="$PROJECT_DIR$/templates/pages/index_page.html" />
         <option value="$PROJECT_DIR$/members/views.py" />
         <option value="$PROJECT_DIR$/templates/pages/sales_effect_analysis_page.html" />
-        <option value="$PROJECT_DIR$/members/models.py" />
         <option value="$PROJECT_DIR$/static/project/login.js" />
         <option value="$PROJECT_DIR$/static/resource/project/influenceAnalysis.js" />
         <option value="$PROJECT_DIR$/static/project/influenceAnalysis.js" />
@@ -130,8 +147,10 @@
         <option value="$PROJECT_DIR$/templates/pages/sales_history_page.html" />
         <option value="$PROJECT_DIR$/Vapor/urls.py" />
         <option value="$PROJECT_DIR$/solution/views.py" />
-        <option value="$PROJECT_DIR$/static/project/dataTable.js" />
+        <option value="$PROJECT_DIR$/solution/models.py" />
         <option value="$PROJECT_DIR$/static/resource/project/dataTable.js" />
+        <option value="$PROJECT_DIR$/static/project/dataTable.js" />
+        <option value="$PROJECT_DIR$/members/models.py" />
       </list>
     </option>
   </component>
@@ -791,8 +810,8 @@
         <state relative-caret-position="165">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="92" />
           <folding>
-            <marker date="1496569843000" expanded="true" signature="875:1106" ph="..." />
-            <marker date="1496569843000" expanded="true" signature="1123:1379" ph="..." />
+            <marker date="1496575771000" expanded="true" signature="875:1106" ph="..." />
+            <marker date="1496575771000" expanded="true" signature="1123:1379" ph="..." />
           </folding>
         </state>
       </provider>
@@ -802,8 +821,8 @@
         <state relative-caret-position="225">
           <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding>
-            <marker date="1496569843000" expanded="true" signature="883:1114" ph="..." />
-            <marker date="1496569843000" expanded="true" signature="1131:1387" ph="..." />
+            <marker date="1496575771000" expanded="true" signature="883:1114" ph="..." />
+            <marker date="1496575771000" expanded="true" signature="1131:1387" ph="..." />
           </folding>
         </state>
       </provider>
@@ -826,48 +845,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/members/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="114" column="39" lean-forward="false" selection-start-line="114" selection-start-column="39" selection-end-line="114" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solution/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/project/dataTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/resource/project/dataTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vapor/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding>
-            <element signature="e#639#671#0" expanded="true" />
+            <element signature="e#639#671#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -877,18 +860,54 @@
         <state relative-caret-position="210">
           <caret line="14" column="88" lean-forward="false" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
           <folding>
-            <marker date="1496569843000" expanded="true" signature="1143:1374" ph="..." />
-            <marker date="1496569843000" expanded="true" signature="1391:1647" ph="..." />
+            <marker date="1496575771000" expanded="true" signature="1143:1374" ph="..." />
+            <marker date="1496575771000" expanded="true" signature="1391:1647" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solution/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="78" column="58" lean-forward="true" selection-start-line="78" selection-start-column="58" selection-end-line="78" selection-end-column="58" />
+        <state relative-caret-position="811">
+          <caret line="112" column="47" lean-forward="false" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/project/dataTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/resource/project/dataTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/members/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="171" column="18" lean-forward="false" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
           </folding>
         </state>
       </provider>

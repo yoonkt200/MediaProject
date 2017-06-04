@@ -47,6 +47,10 @@ class Commerce(TimeStampedModel):
                 buyer.save()
                 self.buyers.add(buyer)
 
+    def getBuyPercent(self):
+        percent = str((self.buyCount / self.sendCount) * 100) + "%"
+        return percent
+
     @staticmethod
     def createCommerce(firebaseManager, obj, sellerObj, sendCount):
         commerceAnalysis = obj['commerceAnalysis']
@@ -60,6 +64,22 @@ class Commerce(TimeStampedModel):
         commerce.manageBuyers(firebaseManager, uid_list, item)
         commerce.save()
         return commerce
+
+    @staticmethod
+    def getTableData(seller):
+        commerces = Commerce.objects.filter(seller=seller)
+        if commerces:
+            dataList = []
+            for index, commerce in enumerate(commerces):
+                buyers = commerce.buyers.all()
+                averageAge = Buyer.getAverageAge(buyers)
+                genderRatio = Buyer.getGenderRatio(buyers)
+                dataList.append([commerce.item.itemName, commerce.price, commerce.timer, commerce.distance, commerce.title,
+                                 commerce.getBuyPercent(), averageAge, genderRatio])
+            return dataList
+        else:
+            return []
+
 
 
 # w가 가장 높은애가 영향력이 높은것, pvalue는 믿을만한 정도를 나타냄

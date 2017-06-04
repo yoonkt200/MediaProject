@@ -112,5 +112,4 @@ def GetTableData(request):
     if request.user.is_authenticated():
         seller = Seller.getSeller(request.user)
     dataList = Commerce.getTableData(seller)
-    # dataList.append(["helo", 'arrai'])
     return JsonResponse({'result': 'success', 'dataList': dataList})
