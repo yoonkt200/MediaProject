@@ -12,10 +12,14 @@ $(document).ready(function () {
                 data: $(this).serialize(),
                 url: '/recommend_item_rules',
                 success: function (data) {
-                    $('.rule1').text(data.rule1);
-                    $('.rule2').text(data.rule2);
-                    $('.rule1_support').text(data.rule1_support);
-                    $('.rule2_support').text(data.rule2_support);
+                    if (data.result == "fail"){
+                        alert("죄송합니다. 현재는 제휴아이템을 추천할 데이터가 모자랍니다.");
+                    } else{
+                        $('.rule1').text(data.rule1);
+                        $('.rule2').text(data.rule2);
+                        $('.rule1_support').text(data.rule1_support);
+                        $('.rule2_support').text(data.rule2_support);
+                    }
                 }
             })
         }

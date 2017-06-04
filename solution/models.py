@@ -80,6 +80,22 @@ class Commerce(TimeStampedModel):
         else:
             return []
 
+    @staticmethod
+    def getSellersCommercesWithItem(seller, item):
+        return Commerce.objects.filter(seller=seller, item=item)
+
+    @staticmethod
+    def getBuyerIdListByCommerces(commerces):
+        id_list = []
+        for index, commerce in enumerate(commerces):
+            buyers = commerce.buyers.all()
+            if buyers:
+                for index, buyer in enumerate(buyers):
+                    if buyer.member.id not in id_list:
+                        id_list.append(buyer.member.id)
+        return id_list
+
+
 
 
 # w가 가장 높은애가 영향력이 높은것, pvalue는 믿을만한 정도를 나타냄

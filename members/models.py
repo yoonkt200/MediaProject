@@ -209,17 +209,13 @@ class Buyer(TimeStampedModel):
 
     @staticmethod
     def getAverageAge(buyers):
-        sum = 0
-        for index, buyer in enumerate(buyers):
-            sum = sum + buyer.getAge()
-        return (str(sum / len(buyers)))
-        # try:
-        #     sum = 0
-        #     for index, buyer in enumerate(buyers):
-        #         sum = sum + buyer.getAge()
-        #     return (str(sum / len(buyers)))
-        # except:
-        #     return ("No Buyers")
+        try:
+            sum = 0
+            for index, buyer in enumerate(buyers):
+                sum = sum + buyer.getAge()
+            return (str(sum / len(buyers)))
+        except:
+            return ("No Buyers")
 
     @staticmethod
     def getGenderRatio(buyers):
@@ -234,3 +230,17 @@ class Buyer(TimeStampedModel):
             return (str(male / (male + female) * 100) + "%")
         except:
             return ("No Buyers")
+
+    @staticmethod
+    def getTransactionListInBuyerList(buyerlist):
+        buyers = Buyer.objects.filter(member__id__in=buyerlist)
+        transaction_list = []
+        if buyers:
+            for index, buyer in enumerate(buyers):
+                items = buyer.items.all()
+                item_list = []
+                if items:
+                    for index, item in enumerate(items):
+                        item_list.append(item.itemName)
+                    transaction_list.append(item_list)
+        return transaction_list
