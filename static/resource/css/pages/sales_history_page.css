@@ -11,6 +11,7 @@
 }
 .page-content {
   background-color:#FFFFFF;
+  height:920px;
 }
 .section {
   height:720px;
@@ -31,6 +32,12 @@
   text-align:left;
   top:92px;
   width:905px;
+}
+.box {
+  height:700px;
+  left:25px;
+  top:200px;
+  width:912px;
 }
 .footer {
   background-color:#29B6F6;

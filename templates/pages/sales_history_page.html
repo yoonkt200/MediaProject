@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"/>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/resource/common/iu.css">
     <link rel="stylesheet" type="text/css" href="/static/resource/css/pages/sales_history_page.css">
     <link rel="stylesheet" type="text/css" href="/static/resource/css/compositions/header.css">
     <link rel="stylesheet" type="text/css" href="/static/resource/css/compositions/footer.css">
     <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
     <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/static/resource/project/dataTable.js"></script>
     <!--[if lt IE 9]>
       <script>
         document.createElement("header" );
@@ -37,6 +41,9 @@
             </div>
             <div class="iu-cell cell-32">
               <p>롯데리아 님의 커머스 판매 내역 입니다.</p>
+            </div>
+            <div class="iu-box tableContent box">
+              <table id="commerceTable" class="display" width="100%"></table>
             </div>
           </div>
         </section>
