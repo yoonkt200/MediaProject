@@ -97,7 +97,20 @@ def KeywordAnalysis(request):
 @csrf_exempt
 @login_required(login_url='/')
 def DataTable(request):
+    if request.user.is_authenticated():
+        seller = Seller.getSeller(request.user)
     # commerces = Commerce.getSellersCommerces(seller)
     # tableListData = Commerce.getTableListData(commerces)
     # return render(request, 'pages/notice/notice_main_ver2.html', {'allData': tableListData})
-    return render(request, 'pages/sales_history_page.html')
+    return render(request, 'pages/sales_history_page.html', {'seller': seller})
+
+
+# 데이터 반환 함수
+@csrf_exempt
+@login_required(login_url='/')
+def GetTableData(request):
+    if request.user.is_authenticated():
+        seller = Seller.getSeller(request.user)
+    dataList = Commerce.getTableData(seller)
+    # dataList.append(["helo", 'arrai'])
+    return JsonResponse({'result': 'success', 'dataList': dataList})

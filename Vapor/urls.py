@@ -20,7 +20,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 from fbconnector.views import Linker
-from solution.views import MainPage, InfluenceAnalysis, Prediction, RecommendItemPage, RecommendItem, KeywordAnalysis, DataTable
+from solution.views import MainPage, InfluenceAnalysis, Prediction, RecommendItemPage, RecommendItem, KeywordAnalysis, \
+    DataTable, GetTableData
 from members.views import Login, Logout
 
 
@@ -39,4 +40,5 @@ urlpatterns = [
     url(r'^recommend_item_rules$', RecommendItem),
     url(r'^analysis_keyword$', KeywordAnalysis),
     url(r'^sales_history$', DataTable),
+    url(r'^getTableDataList$', GetTableData),
 ]
