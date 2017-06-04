@@ -3,9 +3,9 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 
-from members.models import Seller, Buyer
+from members.models import Seller
 from solution.models import Commerce, CommerceSellRegression, PopularText
-from commerce.models import CategoryDivision, Category, Item
+from commerce.models import Item
 
 
 # 분석 소개 메인페이지
@@ -99,9 +99,6 @@ def KeywordAnalysis(request):
 def DataTable(request):
     if request.user.is_authenticated():
         seller = Seller.getSeller(request.user)
-    # commerces = Commerce.getSellersCommerces(seller)
-    # tableListData = Commerce.getTableListData(commerces)
-    # return render(request, 'pages/notice/notice_main_ver2.html', {'allData': tableListData})
     return render(request, 'pages/sales_history_page.html', {'seller': seller})
 
 
