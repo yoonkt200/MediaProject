@@ -60,7 +60,7 @@ class Commerce(TimeStampedModel):
         item = Item.registrationItem(commerceAnalysis['item'], seller.category)
         commerce = Commerce.objects.create(item=item, seller=seller, content=obj['content'], title=obj['title'],
                                 distance=obj['distance'], timer=obj['timer'], sendCount=sendCount,
-                                           buyCount= len(uid_list), price=obj['price'])
+                                           buyCount= len(uid_list), price=commerceAnalysis['price'])
         commerce.manageBuyers(firebaseManager, uid_list, item)
         commerce.save()
         return commerce
@@ -178,4 +178,4 @@ class PopularText(TimeStampedModel):
 
     @staticmethod
     def getLatestModel(category):
-        return PopularText.objects.filter(category=category).order_by('-created').last()
+        return PopularText.objects.filter(category=category).order_by('-created').first()

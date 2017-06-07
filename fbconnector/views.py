@@ -66,4 +66,4 @@ def Linker(request):
 
 
 # Attach to FB with django Observer
-# FirebaseObserver()
+FirebaseObserver()
