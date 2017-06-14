@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/resource/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/pages/sales_effect_analysis_page.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/compositions/header.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/compositions/footer.css">
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/resource/project/influenceAnalysis.js"></script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page sales_effect_analysis_page">
+      <header class="iu-header header">
+        <!-- Composition Path : /compositions/header.html -->
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-12">
+            <div class="iu-text text-37">
+              <p>판매 영향 분석</p>
+            </div>
+            <div class="iu-box box">
+              <div class="iu-cell cell-32">
+                <p>{{seller.member.memberName}} 님의 커머스 판매 카테고리는 "{{seller.category.categoryName}}" 입니다.</p>
+              </div>
+              <div class="iu-cell cell-33">
+                <p>"{{seller.category.categoryName}}" 카테고리의 전체 거래를 기반으로 한 판매 영향 분석 결과는 다음과 같습니다.</p>
+              </div>
+              <div class="iu-box box-34">
+                <div class="iu-floating-image floating-image-56"></div>
+                <div class="iu-text text-39">
+                  <p>가격</p>
+                </div>
+                <div class="iu-text text-41">
+                  <p>영향 계수 :&nbsp;</p>
+                </div>
+                <div class="iu-text text-42">
+                  <p>유의성 :&nbsp;</p>
+                </div>
+                <div class="iu-text weight1 text-51"></div>
+                <div class="iu-text p-value1 text-52"></div>
+              </div>
+              <div class="iu-cell cell-58">
+                <p>변수들의 영향 계수는 (()), (()), (()) 으로, (())이 가장 구매에 큰 영향을 미치는 요소로 분석되었습니다,</p>
+              </div>
+              <div class="iu-box box-35">
+                <div class="iu-floating-image floating-image-57"></div>
+                <div class="iu-text text-40">
+                  <p>시간</p>
+                </div>
+                <div class="iu-text text-44">
+                  <p>영향 계수 :&nbsp;</p>
+                </div>
+                <div class="iu-text text-45">
+                  <p>유의성 :&nbsp;</p>
+                </div>
+                <div class="iu-text weight2 text-55"></div>
+                <div class="iu-text p-value2 text-56"></div>
+              </div>
+              <div class="iu-box box-36">
+                <div class="iu-floating-image floating-image-58"></div>
+                <div class="iu-text text-46">
+                  <p>거리</p>
+                </div>
+                <div class="iu-text text-47">
+                  <p>영향 계수 :&nbsp;</p>
+                </div>
+                <div class="iu-text text-48">
+                  <p>유의성 :&nbsp;</p>
+                </div>
+                <div class="iu-text weight3 text-57"></div>
+                <div class="iu-text p-value3 text-58"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="iu-section section-34">
+          <div class="iu-center-box center-box-35">
+            <div class="iu-text text-38">
+              <p>모의 베이퍼 커머스&nbsp;</p>
+            </div>
+            <div class="iu-box box-38">
+              <div class="iu-text text-43">
+                <p>판매 예측</p>
+              </div>
+              <form class="iu-pg-form form_prediction pg-form-44" enctype="multipart/form-data" method="post">
+                <input class="iu-pg-text-field priceInput pg-text-field" type="number" name="priceInput" placeholder="커머스의 가격을 입력해주세요">
+                <select class="iu-pg-select timerSelect pg-select" name="timerSelect">
+                  <option value="0">타이머를 설정해주세요</option>
+                  <option value="1">1시간</option>
+                  <option value="2">2시간</option>
+                  <option value="3">3시간</option>
+                  <option value="4">4시간</option>
+                  <option value="5">5시간</option>
+                  <option value="6">6시간</option>
+                  <option value="7">7시간</option>
+                  <option value="8">8시간</option>
+                  <option value="9">9시간</option>
+                  <option value="10">10시간</option>
+                  <option value="11">11시간</option>
+                  <option value="12">12시간</option>
+                  <option value="13">13시간</option>
+                  <option value="14">14시간</option>
+                  <option value="15">15시간</option>
+                  <option value="16">16시간</option>
+                  <option value="17">17시간</option>
+                  <option value="18">18시간</option>
+                  <option value="19">19시간</option>
+                  <option value="20">20시간</option>
+                  <option value="21">21시간</option>
+                  <option value="22">22시간</option>
+                  <option value="23">23시간</option>
+                  <option value="24">24시간</option>
+                </select>
+                <select class="iu-pg-select distanceSelect pg-select-58" name="distanceSelect">
+                  <option value="0">커머스 반경을 설정해주세요</option>
+                  <option value="1">1KM</option>
+                  <option value="2">2KM</option>
+                  <option value="3">3KM</option>
+                  <option value="4">4KM</option>
+                  <option value="5">5KM</option>
+                </select>
+                <input class="iux-has-hover iu-pg-button pg-button-50" type="submit" value="Try">
+              </form>
+              <div class="iu-text text-49">
+                <p>결과</p>
+              </div>
+              <div class="iu-text text-50">
+                <p>예측 된 구매 전환률은</p>
+              </div>
+              <div class="iu-text result text-53"></div>
+              <div class="iu-text text-54">
+                <p>% 입니다. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 수정계수(적합도) :</p>
+              </div>
+              <div class="iu-text result2 text-59"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        <!-- Composition Path : /compositions/footer.html -->
+      </footer>
+    </div>
+  </body>
+</HTML>

@@ -1,0 +1,181 @@
+.iu-center-box {
+  width:960px;
+}
+.header {
+  color:#333333;
+  height:76px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:100%;
+}
+.floating-image {
+  background-image:url('/resource/project/logo.png');
+  background-position:center center;
+  background-size:contain;
+  bottom:0px;
+  height:50px;
+  left:18px;
+  margin-bottom:auto;
+  margin-top:auto;
+  top:0px;
+  width:170px;
+}
+.cell-16 {
+  bottom:0px;
+  color:#929292;
+  font-weight:400;
+  height:65px;
+  left:426px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:145px;
+}
+.cell-16 > a {
+  line-height:65px;
+}
+.cell-16.iux-hover, .cell-16.iux-active {
+  color:#29B6F6;
+}
+.cell-15 > a {
+  line-height:65px;
+}
+.cell-15 {
+  bottom:0px;
+  color:#929292;
+  height:65px;
+  left:611px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:75px;
+}
+.cell-15.iux-hover, .cell-15.iux-active {
+  color:#29B6F6;
+}
+.cell-14 > a {
+  line-height:65px;
+}
+.cell-14 {
+  bottom:0px;
+  color:#929292;
+  height:65px;
+  left:726px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:108px;
+}
+.cell-14.iux-hover, .cell-14.iux-active {
+  color:#29B6F6;
+}
+.cell {
+  bottom:0px;
+  color:#929292;
+  height:65px;
+  left:874px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:67px;
+}
+.cell.iux-hover, .cell.iux-active {
+  color:#29B6F6;
+}
+.cell > a {
+  line-height:65px;
+}
+.cell-36 {
+  bottom:0px;
+  color:#929292;
+  height:65px;
+  left:834px;
+  line-height:65px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:40px;
+}
+.cell-37 {
+  bottom:0px;
+  color:#929292;
+  height:65px;
+  left:686px;
+  line-height:65px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:40px;
+}
+.cell-38 {
+  bottom:0px;
+  color:#929292;
+  height:65px;
+  left:571px;
+  line-height:65px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:40px;
+}
+.page-content {
+  background-color:#FFFFFF;
+}
+.section {
+  height:720px;
+}
+.text-37 {
+  font-size:25px;
+  font-weight:700;
+  height:41px;
+  left:25px;
+  top:40px;
+  width:207px;
+}
+.cell-32 {
+  border-width:0px;
+  height:28px;
+  left:26px;
+  line-height:28px;
+  text-align:left;
+  top:92px;
+  width:905px;
+}
+.box {
+  height:569px;
+  left:25px;
+  top:130px;
+  width:912px;
+}
+.footer {
+  background-color:#29B6F6;
+  height:120px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:100%;
+}
+.center-box {
+  background-color:#29B6F6;
+}
+.text-4 {
+  bottom:0px;
+  color:#FFFFFF;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:30px;
+  left:0px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:100%;
+}

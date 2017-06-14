@@ -48,7 +48,10 @@ class Commerce(TimeStampedModel):
                 self.buyers.add(buyer)
 
     def getBuyPercent(self):
-        percent = str((self.buyCount / self.sendCount) * 100) + "%"
+        number = round(((self.buyCount / self.sendCount) * 100), 2)
+        if number > 100:
+            number = 100
+        percent = str(number) + "%"
         return percent
 
     @staticmethod

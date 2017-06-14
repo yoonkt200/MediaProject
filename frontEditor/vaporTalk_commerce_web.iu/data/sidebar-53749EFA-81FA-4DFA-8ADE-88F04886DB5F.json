@@ -1,0 +1,103 @@
+{
+  "htmlID" : "sidebar",
+  "name" : "sidebar",
+  "children" : [
+    {
+      "c_" : "IUText",
+      "htmlID" : "text",
+      "positionStorages" : {
+        "c_" : "JDMutableArrayDict",
+        "array" : [
+          {
+            "c_" : "IUPositionStorage",
+            "position" : 0,
+            "verticalCenter" : true,
+            "xUnit" : 0,
+            "yUnit" : 0,
+            "top" : 0,
+            "left" : 0
+          }
+        ],
+        "keys" : [
+          960
+        ]
+      },
+      "styleStorages" : {
+        "c_" : "JDMutableArrayDict",
+        "array" : [
+          {
+            "c_" : "IUStyleStorage",
+            "widthUnit" : 1,
+            "heightUnit" : 0,
+            "width" : 100,
+            "height" : 30,
+            "fontName" : "Helvetica",
+            "fontSize" : 12,
+            "fontColor" : {
+              "c_" : "NSColor",
+              "R" : 0.5882353186607361,
+              "G" : 0.5882353186607361,
+              "B" : 0.5882353186607361,
+              "A" : 1
+            },
+            "fontAlign" : 1
+          }
+        ],
+        "keys" : [
+          960
+        ]
+      },
+      "propertyStorages" : {
+        "c_" : "JDMutableArrayDict",
+        "array" : [
+          {
+            "c_" : "IUPropertyStorage",
+            "propertyStorage" : {
+              "IUPropertyTextKey" : "<p>Sidebar Area<\/p>"
+            }
+          }
+        ],
+        "keys" : [
+          960
+        ]
+      }
+    }
+  ],
+  "positionStorages" : {
+    "c_" : "JDMutableArrayDict",
+    "array" : [
+      {
+        "c_" : "IUPositionStorage",
+        "position" : 0,
+        "xUnit" : 0,
+        "yUnit" : 0,
+        "top" : 0,
+        "left" : 0
+      }
+    ],
+    "keys" : [
+      960
+    ]
+  },
+  "styleStorages" : {
+    "c_" : "JDMutableArrayDict",
+    "array" : [
+      {
+        "c_" : "IUStyleStorage",
+        "widthUnit" : 1,
+        "heightUnit" : 0,
+        "width" : 100,
+        "height" : 500
+      }
+    ],
+    "keys" : [
+      960
+    ]
+  },
+  "eventVariable" : {
+
+  },
+  "ghostOpacity" : 0.5,
+  "m_" : "53749EFA-81FA-4DFA-8ADE-88F04886DB5F",
+  "c_" : "IUClass"
+}

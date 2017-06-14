@@ -1,0 +1,103 @@
+{
+  "c_" : "IUProject",
+  "viewPorts" : [
+    960
+  ],
+  "_pageGroup" : {
+    "c_" : "IUSheetGroup",
+    "name" : "pages",
+    "_children" : [
+      {
+        "c_" : "IUPage",
+        "file_" : "index_login_page-83CB2B6E-AB1C-4EB5-97CD-D01E8FBD177B.json",
+        "m_" : "83CB2B6E-AB1C-4EB5-97CD-D01E8FBD177B"
+      },
+      {
+        "c_" : "IUPage",
+        "file_" : "index_page-3B7833BB-22B0-4B48-BE86-80AD2AB33886.json",
+        "m_" : "3B7833BB-22B0-4B48-BE86-80AD2AB33886"
+      },
+      {
+        "c_" : "IUPage",
+        "file_" : "sales_effect_analysis_page-A2C9D067-C463-4D7A-B8C7-B4BD7583B177.json",
+        "m_" : "A2C9D067-C463-4D7A-B8C7-B4BD7583B177"
+      },
+      {
+        "c_" : "IUPage",
+        "file_" : "keyword_analysis_page-0E7F2E82-1E39-46DF-BEAB-5B1680F19272.json",
+        "m_" : "0E7F2E82-1E39-46DF-BEAB-5B1680F19272"
+      },
+      {
+        "c_" : "IUPage",
+        "file_" : "product_recommend_page-19B6330A-86B5-4927-8E38-DDD12179255E.json",
+        "m_" : "19B6330A-86B5-4927-8E38-DDD12179255E"
+      },
+      {
+        "c_" : "IUPage",
+        "file_" : "sales_history_page-C212E094-F8DF-4199-A2F4-63B69A0706B7.json",
+        "m_" : "C212E094-F8DF-4199-A2F4-63B69A0706B7"
+      }
+    ]
+  },
+  "_classGroup" : {
+    "c_" : "IUSheetGroup",
+    "name" : "compositions",
+    "_children" : [
+      {
+        "m_" : "45605238-FFAE-464A-A84B-2E8F66DAB223",
+        "c_" : "IUClass",
+        "file_" : "header-45605238-FFAE-464A-A84B-2E8F66DAB223.json"
+      },
+      {
+        "m_" : "6B2663F4-4549-47B7-A386-909BAD0DE40D",
+        "c_" : "IUClass",
+        "file_" : "footer-6B2663F4-4549-47B7-A386-909BAD0DE40D.json"
+      },
+      {
+        "m_" : "53749EFA-81FA-4DFA-8ADE-88F04886DB5F",
+        "c_" : "IUClass",
+        "file_" : "sidebar-53749EFA-81FA-4DFA-8ADE-88F04886DB5F.json"
+      },
+      {
+        "m_" : "D46BE5F8-1F2F-459C-8EF4-89DB51BD4DFF",
+        "c_" : "IUClass",
+        "file_" : "composition-D46BE5F8-1F2F-459C-8EF4-89DB51BD4DFF.json"
+      }
+    ]
+  },
+  "_projectType" : 1,
+  "_projectData" : {
+    "c_" : "IUProjectDjangoData",
+    "buildPath" : "\/Users\/yoon\/Documents\/MediaProject\/templates",
+    "resourcePrefix" : "\/static\/resource",
+    "resourceBuildPath" : "\/Users\/yoon\/Documents\/MediaProject\/static\/resource",
+    "IncludeTemplatePrefix" : "."
+  },
+  "_htmlData" : {
+    "c_" : "IUProjectHTMLData",
+    "buildPath" : "$CurrentFolder\/$AppName_build",
+    "resourcePrefix" : "\/resource",
+    "resourceBuildPath" : "$CurrentFolder\/$AppName_build\/resource",
+    "_port" : 21566,
+    "_cdnJSAttribute" : 1
+  },
+  "_favoriteColors" : [
+    {
+      "c_" : "NSColor",
+      "R" : 0.3333333432674408,
+      "G" : 0.6745098233222961,
+      "B" : 0.9333333373069763,
+      "A" : 1
+    },
+    {
+      "c_" : "NSColor",
+      "R" : 0.2313725501298904,
+      "G" : 0.3490196168422699,
+      "B" : 0.5960784554481506,
+      "A" : 1
+    }
+  ],
+  "_documentPath" : "$CurrentFolder\/$AppName_document",
+  "defaultLayout" : 1,
+  "idPrefix" : ""
+}

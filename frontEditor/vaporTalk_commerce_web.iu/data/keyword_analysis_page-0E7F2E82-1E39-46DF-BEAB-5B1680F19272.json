@@ -1,0 +1,1124 @@
+{
+  "htmlID" : "keyword_analysis_page",
+  "name" : "keyword_analysis_page",
+  "positionStorages" : {
+    "c_" : "JDMutableArrayDict",
+    "array" : [
+      {
+        "c_" : "IUPositionStorage",
+        "position" : 0,
+        "xUnit" : 0,
+        "yUnit" : 0
+      }
+    ],
+    "keys" : [
+      960
+    ]
+  },
+  "styleStorages" : {
+    "c_" : "JDMutableArrayDict",
+    "array" : [
+      {
+        "c_" : "IUStyleStorage",
+        "widthUnit" : 0,
+        "heightUnit" : 0
+      }
+    ],
+    "keys" : [
+      960
+    ]
+  },
+  "eventVariable" : {
+
+  },
+  "ghostOpacity" : 0.5,
+  "pageContent" : {
+    "c_" : "IUPageContent",
+    "htmlID" : "page-content",
+    "children" : [
+      {
+        "c_" : "IUSection",
+        "htmlID" : "section",
+        "children" : [
+          {
+            "c_" : "IUCenterBox",
+            "htmlID" : "center-box-12",
+            "children" : [
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-37",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 40,
+                      "left" : 25
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 180,
+                      "height" : 41,
+                      "fontSize" : 25,
+                      "fontWeight" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "propertyStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPropertyStorage",
+                      "propertyStorage" : {
+                        "IUPropertyTextKey" : "<p>키워드 분석<\/p>"
+                      }
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUBox",
+                "htmlID" : "box",
+                "children" : [
+                  {
+                    "c_" : "IUCell",
+                    "htmlID" : "cell-18",
+                    "pgInnerCode" : "<p>{{seller.member.memberName}} 님의 카테고리 \"{{seller.category.categoryName}}\" 에서 판매된 모든 커머스 거래의 키워드 분석 내용<\/p>",
+                    "positionStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUPositionStorage",
+                          "position" : 0,
+                          "verticalCenter" : true,
+                          "xUnit" : 0,
+                          "yUnit" : 0,
+                          "top" : 0,
+                          "left" : 25
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "styleStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUStyleStorage",
+                          "widthUnit" : 0,
+                          "heightUnit" : 0,
+                          "width" : 905,
+                          "height" : 40,
+                          "topBorderColor" : {
+                            "c_" : "NSColor",
+                            "R" : 0.7142857313156128,
+                            "G" : 0.7142857313156128,
+                            "B" : 0.7142857313156128,
+                            "A" : 1
+                          },
+                          "leftBorderColor" : {
+                            "c_" : "NSColor",
+                            "R" : 0.7142857313156128,
+                            "G" : 0.7142857313156128,
+                            "B" : 0.7142857313156128,
+                            "A" : 1
+                          },
+                          "rightBorderColor" : {
+                            "c_" : "NSColor",
+                            "R" : 0.7142857313156128,
+                            "G" : 0.7142857313156128,
+                            "B" : 0.7142857313156128,
+                            "A" : 1
+                          },
+                          "bottomBorderColor" : {
+                            "c_" : "NSColor",
+                            "R" : 0.7142857313156128,
+                            "G" : 0.7142857313156128,
+                            "B" : 0.7142857313156128,
+                            "A" : 1
+                          },
+                          "topBorderWidth" : 0,
+                          "leftBorderWidth" : 0,
+                          "rightBorderWidth" : 0,
+                          "bottomBorderWidth" : 0,
+                          "topLeftBorderRadius" : 7,
+                          "topRightBorderRadius" : 7,
+                          "bottomLeftborderRadius" : 7,
+                          "bottomRightBorderRadius" : 7,
+                          "fontAlign" : 0
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "propertyStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUPropertyStorage",
+                          "propertyStorage" : {
+                            "IUPropertyTextKey" : "<p>롯데리아 님의 카테고리 \"치즈버거\"에서 베이퍼 커머스 메시지로 보낸 키워드 분석 내용<\/p>"
+                          }
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    }
+                  }
+                ],
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 96,
+                      "left" : 0
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 960,
+                      "height" : 28
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-23",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 297,
+                      "left" : 221
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 95,
+                      "height" : 26,
+                      "fontSize" : 20,
+                      "fontColor" : {
+                        "c_" : "NSColor",
+                        "R" : 0.4285714626312256,
+                        "G" : 0.4285714626312256,
+                        "B" : 0.4285714626312256,
+                        "A" : 1
+                      },
+                      "fontWeight" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "propertyStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPropertyStorage",
+                      "propertyStorage" : {
+                        "IUPropertyTextKey" : "<p>제목 키워드<\/p>"
+                      }
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-24",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 297,
+                      "left" : 621
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 96,
+                      "height" : 26,
+                      "fontSize" : 20,
+                      "fontColor" : {
+                        "c_" : "NSColor",
+                        "R" : 0.1607843137254902,
+                        "G" : 0.7137254901960784,
+                        "B" : 0.9647058823529412,
+                        "A" : 1
+                      },
+                      "fontWeight" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "propertyStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPropertyStorage",
+                      "propertyStorage" : {
+                        "IUPropertyTextKey" : "<p>내용 키워드<\/p>\n<p>&nbsp;<\/p>"
+                      }
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUFloatingImage",
+                "htmlID" : "floating-image-25",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 131,
+                      "left" : 68
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "opacity" : 0.5,
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 174,
+                      "height" : 174,
+                      "imageName" : "\/circle_gray.png",
+                      "imageType" : 0,
+                      "imageHPosition" : 1,
+                      "imageVPosition" : 1,
+                      "imageSizeType" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-31",
+                "name" : "title_keyword_1",
+                "themeClass" : "titleKeyword1",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 1,
+                      "secondPosition" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "marginTop" : 207,
+                      "marginLeft" : 102
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 104,
+                      "height" : 24,
+                      "fontAlign" : 1
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUFloatingImage",
+                "htmlID" : "floating-image-26",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 167,
+                      "left" : 299
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "opacity" : 0.5,
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 160,
+                      "height" : 160,
+                      "imageName" : "\/circle_gray.png",
+                      "imageType" : 0,
+                      "imageHPosition" : 1,
+                      "imageVPosition" : 1,
+                      "imageSizeType" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-32",
+                "name" : "title_keyword_2",
+                "themeClass" : "titleKeyword2",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 1,
+                      "secondPosition" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "marginTop" : 191,
+                      "marginLeft" : 174
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 124,
+                      "height" : 24,
+                      "fontAlign" : 1
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUFloatingImage",
+                "htmlID" : "floating-image-27",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 336,
+                      "left" : 137
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "opacity" : 0.5,
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 196,
+                      "height" : 196,
+                      "imageName" : "\/circle_gray.png",
+                      "imageType" : 0,
+                      "imageHPosition" : 1,
+                      "imageVPosition" : 1,
+                      "imageSizeType" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-33",
+                "name" : "title_keyword_3",
+                "themeClass" : "titleKeyword3",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 1,
+                      "secondPosition" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "marginTop" : -210,
+                      "marginLeft" : 327
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 104,
+                      "height" : 24,
+                      "fontAlign" : 1
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUFloatingImage",
+                "htmlID" : "floating-image-28",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 325,
+                      "left" : 487
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "opacity" : 0.5,
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 152,
+                      "height" : 152,
+                      "imageName" : "\/circle_blue.png",
+                      "imageType" : 0,
+                      "imageHPosition" : 1,
+                      "imageVPosition" : 1,
+                      "imageSizeType" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-34",
+                "name" : "content_keyword_1",
+                "themeClass" : "contentKeyword1",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 1,
+                      "secondPosition" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "marginTop" : -63,
+                      "marginLeft" : 619
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 104,
+                      "height" : 24,
+                      "fontAlign" : 1
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUFloatingImage",
+                "htmlID" : "floating-image-29",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 128,
+                      "left" : 590
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "opacity" : 0.5,
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 162,
+                      "height" : 162,
+                      "imageName" : "\/circle_blue.png",
+                      "imageType" : 0,
+                      "imageHPosition" : 1,
+                      "imageVPosition" : 1,
+                      "imageSizeType" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-35",
+                "name" : "content_keyword_2",
+                "themeClass" : "contentKeyword2",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 1,
+                      "secondPosition" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "marginTop" : 168,
+                      "marginLeft" : 511
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 104,
+                      "height" : 24,
+                      "fontAlign" : 1
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUFloatingImage",
+                "htmlID" : "floating-image-30",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 324,
+                      "left" : 696
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "opacity" : 0.5,
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 189,
+                      "height" : 189,
+                      "imageName" : "\/circle_blue.png",
+                      "imageType" : 0,
+                      "imageHPosition" : 1,
+                      "imageVPosition" : 1,
+                      "imageSizeType" : 2
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              },
+              {
+                "c_" : "IUText",
+                "htmlID" : "text-36",
+                "name" : "content_keyword_3",
+                "themeClass" : "contentKeyword3",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 1,
+                      "secondPosition" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "marginTop" : -7,
+                      "marginLeft" : 731
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 124,
+                      "height" : 24,
+                      "fontAlign" : 1
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                }
+              }
+            ],
+            "positionStorages" : {
+              "c_" : "JDMutableArrayDict",
+              "array" : [
+                {
+                  "c_" : "IUPositionStorage",
+                  "position" : 1,
+                  "horizontalCenter" : true,
+                  "xUnit" : 0,
+                  "yUnit" : 0,
+                  "top" : 0,
+                  "left" : 0
+                }
+              ],
+              "keys" : [
+                960
+              ]
+            },
+            "styleStorages" : {
+              "c_" : "JDMutableArrayDict",
+              "array" : [
+                {
+                  "c_" : "IUStyleStorage",
+                  "widthUnit" : 0,
+                  "heightUnit" : 0
+                }
+              ],
+              "keys" : [
+                960
+              ]
+            }
+          }
+        ],
+        "positionStorages" : {
+          "c_" : "JDMutableArrayDict",
+          "array" : [
+            {
+              "c_" : "IUPositionStorage",
+              "position" : 1,
+              "xUnit" : 0,
+              "yUnit" : 0,
+              "top" : 0,
+              "left" : 0
+            }
+          ],
+          "keys" : [
+            960
+          ]
+        },
+        "styleStorages" : {
+          "c_" : "JDMutableArrayDict",
+          "array" : [
+            {
+              "c_" : "IUStyleStorage",
+              "widthUnit" : 0,
+              "heightUnit" : 0,
+              "height" : 600
+            }
+          ],
+          "keys" : [
+            960
+          ]
+        }
+      }
+    ],
+    "positionStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUPositionStorage",
+          "position" : 1,
+          "xUnit" : 0,
+          "yUnit" : 0,
+          "top" : 0,
+          "left" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "styleStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUStyleStorage",
+          "widthUnit" : 0,
+          "heightUnit" : 0,
+          "bgColor1" : {
+            "c_" : "NSColor",
+            "R" : 1,
+            "G" : 1,
+            "B" : 1,
+            "A" : 1
+          }
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    }
+  },
+  "header" : {
+    "c_" : "IUHeader",
+    "htmlID" : "header",
+    "positionStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUPositionStorage",
+          "position" : 1,
+          "xUnit" : 0,
+          "yUnit" : 0,
+          "top" : 0,
+          "left" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "styleStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUStyleStorage",
+          "widthUnit" : 1,
+          "heightUnit" : 0,
+          "width" : 100,
+          "height" : 76,
+          "fontColor" : {
+            "c_" : "NSColor",
+            "R" : 0.2000000029802322,
+            "G" : 0.2000000029802322,
+            "B" : 0.2000000029802322,
+            "A" : 1
+          }
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "_prototypeClass" : "45605238-FFAE-464A-A84B-2E8F66DAB223"
+  },
+  "footer" : {
+    "c_" : "IUFooter",
+    "htmlID" : "footer",
+    "positionStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUPositionStorage",
+          "position" : 1,
+          "xUnit" : 0,
+          "yUnit" : 0,
+          "top" : 0,
+          "left" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "styleStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUStyleStorage",
+          "widthUnit" : 1,
+          "heightUnit" : 0,
+          "width" : 100,
+          "height" : 120,
+          "bgColor1" : {
+            "c_" : "NSColor",
+            "R" : 0.1607843137254902,
+            "G" : 0.7137254901960784,
+            "B" : 0.9647058823529412,
+            "A" : 1
+          }
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "_prototypeClass" : "6B2663F4-4549-47B7-A386-909BAD0DE40D"
+  },
+  "sidebar" : {
+    "c_" : "IUSidebar",
+    "htmlID" : "sidebar",
+    "positionStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUPositionStorage",
+          "position" : 1,
+          "secondPosition" : 1,
+          "xUnit" : 0,
+          "yUnit" : 0,
+          "top" : 0,
+          "left" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "styleStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUStyleStorage",
+          "widthUnit" : 1,
+          "heightUnit" : 0,
+          "width" : 100,
+          "height" : 500
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "_prototypeClass" : "53749EFA-81FA-4DFA-8ADE-88F04886DB5F"
+  },
+  "popupGroup" : {
+    "c_" : "IUGroup",
+    "htmlID" : "",
+    "name" : "Popup Group",
+    "positionStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUPositionStorage",
+          "position" : 0,
+          "xUnit" : 0,
+          "yUnit" : 0,
+          "top" : 0,
+          "left" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "styleStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUStyleStorage",
+          "widthUnit" : 0,
+          "heightUnit" : 0,
+          "width" : 0,
+          "height" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "_groupType" : 2
+  },
+  "panelGroup" : {
+    "c_" : "IUGroup",
+    "htmlID" : "",
+    "name" : "Panel Group",
+    "positionStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUPositionStorage",
+          "position" : 0,
+          "xUnit" : 0,
+          "yUnit" : 0,
+          "top" : 0,
+          "left" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "styleStorages" : {
+      "c_" : "JDMutableArrayDict",
+      "array" : [
+        {
+          "c_" : "IUStyleStorage",
+          "widthUnit" : 0,
+          "heightUnit" : 0,
+          "width" : 0,
+          "height" : 0
+        }
+      ],
+      "keys" : [
+        960
+      ]
+    },
+    "_groupType" : 1
+  },
+  "layout" : 1,
+  "jsFileRelativePaths" : [
+    "\/keywordAnalysis.js"
+  ],
+  "m_" : "0E7F2E82-1E39-46DF-BEAB-5B1680F19272",
+  "c_" : "IUPage"
+}

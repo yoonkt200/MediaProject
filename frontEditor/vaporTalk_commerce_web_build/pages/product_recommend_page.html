@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/resource/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/pages/product_recommend_page.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/compositions/header.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/compositions/footer.css">
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/resource/project/recommendItem.js"></script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page product_recommend_page">
+      <header class="iu-header header">
+        <!-- Composition Path : /compositions/header.html -->
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-12">
+            <div class="iu-text text-37">
+              <p>제휴 아이템 추천</p>
+            </div>
+            <div class="iu-box box">
+              <div class="iu-cell cell-32">
+                <p>{{seller.member.memberName}} 님의 커머스 판매 카테고리는 "{{seller.category.categoryName}}" 입니다.</p>
+              </div>
+              <div class="iu-cell cell-33">
+                <p>"{{seller.category.categoryName}}" 카테고리의 전체 거래를 기반으로 , 사용자가 구매한 다른 아이템을 기반으로  제휴 아이템을 추천합니다.</p>
+              </div>
+            </div>
+            <div class="iu-text text-24">
+              <p>아이템 선택</p>
+            </div>
+            <form class="iu-pg-form form_recommendation pg-form" enctype="multipart/form-data" method="post">
+              <select class="iu-pg-select itemSelect pg-select" name="itemSelect">
+                <option value="">아이템</option>
+              </select>
+              <input class="iux-has-hover iu-pg-button pg-button" type="submit" value="Try">
+            </form>
+            <div class="iu-text text-27">
+              <p>제휴 아이템 추천 결과</p>
+            </div>
+            <div class="iu-box box-29">
+              <div class="iu-text rule1 text-33"></div>
+              <div class="iu-text text-35">
+                <p>연관도 :&nbsp;</p>
+              </div>
+              <div class="iu-text rule1_support text-38"></div>
+              <div class="iu-text text-39">
+                <p>%</p>
+              </div>
+            </div>
+            <div class="iu-floating-image floating-image-30"></div>
+            <div class="iu-box box-30">
+              <div class="iu-text rule2 text-34"></div>
+              <div class="iu-text text-36">
+                <p>연관도 :&nbsp;</p>
+              </div>
+              <div class="iu-text rule2_support text-40"></div>
+              <div class="iu-text text-41">
+                <p>%</p>
+              </div>
+            </div>
+            <div class="iu-floating-image floating-image-32"></div>
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        <!-- Composition Path : /compositions/footer.html -->
+      </footer>
+    </div>
+  </body>
+</HTML>

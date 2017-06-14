@@ -1,0 +1,616 @@
+{
+  "htmlID" : "header",
+  "name" : "header",
+  "children" : [
+    {
+      "c_" : "IUCenterBox",
+      "htmlID" : "center-box-3",
+      "children" : [
+        {
+          "c_" : "IUFloatingImage",
+          "htmlID" : "floating-image",
+          "linkString" : "\/main",
+          "clickType" : 2,
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : 0,
+                "top" : 0,
+                "left" : 18
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 170,
+                "height" : 50,
+                "imageName" : "\/logo.png",
+                "imageType" : 0,
+                "imageHPosition" : 1,
+                "imageVPosition" : 1,
+                "imageSizeType" : 2
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        },
+        {
+          "c_" : "IUCell",
+          "htmlID" : "cell-16",
+          "linkString" : "\/analysis_influence",
+          "clickType" : 2,
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : false,
+                "top" : 6,
+                "left" : 426
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 145,
+                "height" : 65,
+                "fontColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.5714285969734192,
+                  "G" : 0.5714285969734192,
+                  "B" : 0.5714285969734192,
+                  "A" : 1
+                },
+                "fontWeight" : 1,
+                "fontAlign" : 1
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "propertyStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPropertyStorage",
+                "propertyStorage" : {
+                  "IUPropertyTextKey" : "<p>판매 영향 분석 &amp; 예측<\/p>"
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "actionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUActionStorage",
+                "hoverTextColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.1607843137254902,
+                  "G" : 0.7137254901960784,
+                  "B" : 0.9647058823529412,
+                  "A" : 1
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        },
+        {
+          "c_" : "IUCell",
+          "htmlID" : "cell-15",
+          "linkString" : "\/analysis_keyword",
+          "clickType" : 2,
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : false,
+                "top" : 5,
+                "left" : 611
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 75,
+                "height" : 65,
+                "fontColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.5714285969734192,
+                  "G" : 0.5714285969734192,
+                  "B" : 0.5714285969734192,
+                  "A" : 1
+                },
+                "fontAlign" : 1
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "propertyStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPropertyStorage",
+                "propertyStorage" : {
+                  "IUPropertyTextKey" : "<p>키워드 분석<\/p>"
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "actionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUActionStorage",
+                "hoverTextColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.1607843137254902,
+                  "G" : 0.7137254901960784,
+                  "B" : 0.9647058823529412,
+                  "A" : 1
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        },
+        {
+          "c_" : "IUCell",
+          "htmlID" : "cell-14",
+          "linkString" : "\/recommend_item",
+          "clickType" : 2,
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : false,
+                "top" : 6,
+                "left" : 726
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 108,
+                "height" : 65,
+                "fontColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.5714285969734192,
+                  "G" : 0.5714285969734192,
+                  "B" : 0.5714285969734192,
+                  "A" : 1
+                },
+                "fontAlign" : 1
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "propertyStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPropertyStorage",
+                "propertyStorage" : {
+                  "IUPropertyTextKey" : "<p>제휴 아이템 추천<\/p>"
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "actionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUActionStorage",
+                "hoverTextColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.1607843137254902,
+                  "G" : 0.7137254901960784,
+                  "B" : 0.9647058823529412,
+                  "A" : 1
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        },
+        {
+          "c_" : "IUCell",
+          "htmlID" : "cell",
+          "linkString" : "\/sales_history",
+          "clickType" : 2,
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : false,
+                "top" : 6,
+                "left" : 874
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 67,
+                "height" : 65,
+                "fontColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.5714285969734192,
+                  "G" : 0.5714285969734192,
+                  "B" : 0.5714285969734192,
+                  "A" : 1
+                },
+                "fontAlign" : 1
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "propertyStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPropertyStorage",
+                "propertyStorage" : {
+                  "IUPropertyTextKey" : "<p>판매 내역<\/p>"
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "actionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUActionStorage",
+                "hoverTextColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.1607843137254902,
+                  "G" : 0.7137254901960784,
+                  "B" : 0.9647058823529412,
+                  "A" : 1
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        },
+        {
+          "c_" : "IUCell",
+          "htmlID" : "cell-36",
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : 0,
+                "top" : 6,
+                "left" : 834
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 40,
+                "height" : 65,
+                "fontColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.5714285969734192,
+                  "G" : 0.5714285969734192,
+                  "B" : 0.5714285969734192,
+                  "A" : 1
+                },
+                "fontAlign" : 1
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "propertyStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPropertyStorage",
+                "propertyStorage" : {
+                  "IUPropertyTextKey" : "<p>|<\/p>"
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        },
+        {
+          "c_" : "IUCell",
+          "htmlID" : "cell-37",
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : 0,
+                "top" : 6,
+                "left" : 686
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 40,
+                "height" : 65,
+                "fontColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.5714285969734192,
+                  "G" : 0.5714285969734192,
+                  "B" : 0.5714285969734192,
+                  "A" : 1
+                },
+                "fontAlign" : 1
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "propertyStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPropertyStorage",
+                "propertyStorage" : {
+                  "IUPropertyTextKey" : "<p>|<\/p>"
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        },
+        {
+          "c_" : "IUCell",
+          "htmlID" : "cell-38",
+          "positionStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPositionStorage",
+                "position" : 0,
+                "verticalCenter" : true,
+                "xUnit" : 0,
+                "yUnit" : 0,
+                "top" : 6,
+                "left" : 571
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "styleStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUStyleStorage",
+                "widthUnit" : 0,
+                "heightUnit" : 0,
+                "width" : 40,
+                "height" : 65,
+                "fontColor" : {
+                  "c_" : "NSColor",
+                  "R" : 0.5714285969734192,
+                  "G" : 0.5714285969734192,
+                  "B" : 0.5714285969734192,
+                  "A" : 1
+                },
+                "fontAlign" : 1
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          },
+          "propertyStorages" : {
+            "c_" : "JDMutableArrayDict",
+            "array" : [
+              {
+                "c_" : "IUPropertyStorage",
+                "propertyStorage" : {
+                  "IUPropertyTextKey" : "<p>|<\/p>"
+                }
+              }
+            ],
+            "keys" : [
+              960
+            ]
+          }
+        }
+      ],
+      "positionStorages" : {
+        "c_" : "JDMutableArrayDict",
+        "array" : [
+          {
+            "c_" : "IUPositionStorage",
+            "position" : 1,
+            "horizontalCenter" : true,
+            "xUnit" : 0,
+            "yUnit" : 0,
+            "top" : 0,
+            "left" : 0
+          }
+        ],
+        "keys" : [
+          960
+        ]
+      },
+      "styleStorages" : {
+        "c_" : "JDMutableArrayDict",
+        "array" : [
+          {
+            "c_" : "IUStyleStorage",
+            "widthUnit" : 0,
+            "heightUnit" : 0
+          }
+        ],
+        "keys" : [
+          960
+        ]
+      }
+    }
+  ],
+  "positionStorages" : {
+    "c_" : "JDMutableArrayDict",
+    "array" : [
+      {
+        "c_" : "IUPositionStorage",
+        "position" : 0,
+        "xUnit" : 0,
+        "yUnit" : 0,
+        "top" : 0,
+        "left" : 0
+      }
+    ],
+    "keys" : [
+      960
+    ]
+  },
+  "styleStorages" : {
+    "c_" : "JDMutableArrayDict",
+    "array" : [
+      {
+        "c_" : "IUStyleStorage",
+        "widthUnit" : 1,
+        "heightUnit" : 0,
+        "width" : 100,
+        "height" : 76,
+        "fontColor" : {
+          "c_" : "NSColor",
+          "R" : 0.2000000029802322,
+          "G" : 0.2000000029802322,
+          "B" : 0.2000000029802322,
+          "A" : 1
+        }
+      }
+    ],
+    "keys" : [
+      960
+    ]
+  },
+  "eventVariable" : {
+
+  },
+  "ghostOpacity" : 0.5,
+  "m_" : "45605238-FFAE-464A-A84B-2E8F66DAB223",
+  "c_" : "IUClass"
+}

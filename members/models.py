@@ -213,7 +213,7 @@ class Buyer(TimeStampedModel):
             sum = 0
             for index, buyer in enumerate(buyers):
                 sum = sum + buyer.getAge()
-            return (str(sum / len(buyers)))
+            return str(round((sum / len(buyers), 2)))
         except:
             return ("No Buyers")
 
@@ -227,7 +227,7 @@ class Buyer(TimeStampedModel):
                     male = male + 1
                 else:
                     female = female + 1
-            return (str(male / (male + female) * 100) + "%")
+            return (str(round((male / (male + female) * 100), 2)) + "%")
         except:
             return ("No Buyers")
 
