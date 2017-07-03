@@ -1,24 +1,12 @@
-# MusicFileProgram
-- 본 프로젝트는 자바를 이용한 음악 파일의 태그를 정리해주는 프로그램입니다.
+# VaporTalk Data Analysis Solution
+- 본 프로젝트는 메신저 앱인 VaporTalk 앱의 커머스 기능을 이용한 프로젝트입니다.
+- 앱에서 발생한 거래 데이터를 기업에게 Web Client Data Analysis Solution 형태로 제공합니다.
 
 ## Using
-- 개발 언어 : Java
+- 개발 Framework : Django - Python (tensorflow + pandas + scikit 등)
 
 ## Project Goal
-- 디지털 음원 파일에 단순히 듣는 재미만이 아닌, 보는 재미를 줘야한다는 아이디어에 착안하여 진행한 프로젝트입니다. 
-- 사용자로 하여금, 작곡가나 앨범, 노래 가사와 장르 등 다양한 음악파일의 정보를 손쉽게 정리하거나 새로운 태그를 추가 할 수 있습니다.
-- 파일의 메타태그 정보를 이용하여 태그를 읽거나 쓸(수정) 수 있습니다. 이미지와 가사를 넣는 기능을 추가하였으며, 데이터를 정렬하거나 일괄편집 하는 것도 가능합니다.
-- 그리고, 현재 가지고 있는 파일들의 태그 데이터를 JavaFX를 이용해 간단히 시각화 해주는 기능을 제공합니다
+- 회귀분석, 장바구니 연관분석, 판매예측, 판매 자연어 랭킹등의 데이터 분석 솔루션을 제공합니다.
 
 ## P.S
-- 수 년 전에 만든 대학교 기초 수업 과제 결과물로, 자바를 이용한 매우 단순한 프로그램입니다.
-- Java 및 객체지향 언어, GUI프로그래밍 입문자들을 위해 하찮은 코드를 공유합니다.
-
-## P.S - 2
-- 실행 파일은 없고, 프로젝트를 다운받아 자바 프로그램으로 실행하면 됩니다. 
-- jid3lib.jar, jaudiotagger.jar 라이브러리를 설치하셔야 합니다.
-- GUI로는 Swing과 JavaFX를 사용하였습니다.
-- 음악파일이 들어있는 디렉토리를 설정한 뒤에, edit tag 탭을 선택하면 됩니다.
-
-## Image
-![homepage](https://github.com/yoonkt200/MusicFileProgram/blob/master/images/1.PNG)
+- 전체 프로젝트에 대한 설명은 pdf 파일로 첨부하였습니다. (VaporTalk.pdf)
