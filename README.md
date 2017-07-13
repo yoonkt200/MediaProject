@@ -10,3 +10,6 @@
 
 ## P.S
 - 전체 프로젝트에 대한 설명은 pdf 파일로 첨부하였습니다. (VaporTalk.pdf)
+
+## Demo Video
+- https://www.youtube.com/watch?v=bVgkYFx-BKo&feature=youtu.be
